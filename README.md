@@ -184,6 +184,28 @@ default is `'"all"'`, which includes `Suggests` — that pulled in `sf` and
 `tigris`, and with them `s2`, `wk`, `units` and an apt-installed GDAL/PROJ/GEOS,
 none of which the nightly path ever loads. See "Maps without a geo stack" above.
 
+## Working on it
+
+Two workflows guard the repo. `check.yml` runs the gates and a no-publish build
+on every push to `main` and every PR — nothing validated a push before it
+existed, so a broken commit sat until 03:30 and then simply failed to publish.
+`nightly.yml` is the one that publishes.
+
+There is a Claude Code skill for deck edits at `.claude/skills/deck/`. In a
+session inside this repo, `/deck` loads the file map, the marker contract, the
+chart conventions worth preserving, and the build-and-verify loop, so none of it
+needs restating per request.
+
+One-time per clone, to stop a local build ever reaching the published tree:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+That enables a pre-commit hook refusing anything staged under `docs/`
+(`ALLOW_DOCS_COMMIT=1` overrides; CI is exempt, since the bot publishes there
+legitimately).
+
 ## Publishing
 
 `.github/workflows/nightly.yml` runs at 07:30 UTC (~03:30 ET, after the upstream

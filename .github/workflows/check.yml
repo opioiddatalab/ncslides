@@ -1,0 +1,88 @@
+name: check
+
+# Validates every change WITHOUT publishing. Until this existed, nothing checked
+# a push: nightly.yml only runs on a schedule, so a broken commit sat on main
+# until 03:30 and then failed to publish, leaving yesterday's deck served.
+#
+# Deliberately never writes docs/ and never pushes -- see permissions below.
+
+on:
+  push:
+    branches: [main]
+    # The nightly bot's commits only touch docs/; re-checking them is pure waste.
+    paths-ignore:
+      - 'docs/**'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+
+# Superseded runs are pointless -- keep only the newest per branch/PR.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read          # cannot publish even by accident
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      # Same snapshot AND the same __linux__ binary path as nightly.yml, so this
+      # job shares the nightly's package cache instead of building its own.
+      RSPM: 'https://packagemanager.posit.co/cran/__linux__/noble/2026-08-01'
+
+    steps:
+      - uses: actions/checkout@v5
+
+      # Both gates run without R, in seconds. Fail here before spending minutes.
+      - name: Templates carry no leftover mock values
+        run: python3 tools/audit_slides.py
+
+      - name: Templates and R agree on every marker
+        run: python3 tools/check_contract.py
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.3'
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          dependencies: '"hard"'
+          extra-packages: any::sessioninfo
+          cache-version: 2
+
+      - name: Build into build/, never docs/
+        run: DECK_OUT=build Rscript r/build_nightly.R
+
+      - name: Deck is complete and honest
+        run: |
+          set -euo pipefail
+          test -s build/index.html
+          if grep -q '{{' build/index.html; then
+            echo "::error::unresolved template markers in the deck"
+            grep -o '{{[^}]*}}' build/index.html | sort -u | head -20
+            exit 1
+          fi
+          if grep -qi 'placeholder' build/index.html; then
+            echo "::error::placeholder text in the deck"
+            grep -oi '.\{0,60\}placeholder.\{0,40\}' build/index.html | head -5
+            exit 1
+          fi
+          echo "slides: $(grep -c '<section' build/index.html)"
+
+      - name: DECK_OUT kept its hands off the published tree
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- docs; then
+            echo "::error::the build modified tracked docs/ -- DECK_OUT is not being honoured"
+            git diff --stat -- docs | tail -5
+            exit 1
+          fi
+          echo "docs/ untouched"
+
+      - name: Session info on failure
+        if: failure()
+        run: Rscript -e 'sessioninfo::session_info()'

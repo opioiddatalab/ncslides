@@ -1,0 +1,32 @@
+#!/bin/sh
+# Refuse to commit anything under docs/.
+#
+# docs/ is the published deck: the nightly job rebuilds it, commits it to main
+# and GitHub Pages serves it. A hand-committed local build is always the stale
+# one, and resolving the conflict means merging binary PNGs. Build with
+# DECK_OUT=build instead; `git checkout -- docs` discards an accidental one.
+#
+# Enable once per clone:  git config core.hooksPath .githooks
+# Bypass deliberately:    ALLOW_DOCS_COMMIT=1 git commit ...
+
+# CI publishes docs/ legitimately; never block the bot.
+[ "${CI:-}" = "true" ] && exit 0
+[ -n "${ALLOW_DOCS_COMMIT:-}" ] && exit 0
+
+staged=$(git diff --cached --name-only --diff-filter=ACMR | grep '^docs/' || true)
+
+if [ -n "$staged" ]; then
+  n=$(printf '%s\n' "$staged" | wc -l | tr -d ' ')
+  echo "pre-commit: refusing to commit $n file(s) under docs/" >&2
+  echo >&2
+  printf '%s\n' "$staged" | head -5 | sed 's/^/  /' >&2
+  [ "$n" -gt 5 ] && echo "  ... and $((n - 5)) more" >&2
+  echo >&2
+  echo "  docs/ is published by the nightly job. To drop a local build:" >&2
+  echo "      git restore --staged docs && git checkout -- docs" >&2
+  echo "  To build without touching it next time:" >&2
+  echo "      DECK_OUT=build Rscript r/build_nightly.R" >&2
+  exit 1
+fi
+
+exit 0
