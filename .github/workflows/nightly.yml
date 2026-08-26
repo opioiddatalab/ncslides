@@ -45,8 +45,15 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
+          # HARD dependencies only: Depends/Imports/LinkingTo. The action's
+          # default is '"all"', which includes Suggests -- i.e. sf and tigris,
+          # and with them s2, wk, units, classInt and an apt-installed
+          # GDAL/PROJ/GEOS. r/nc_counties.rds exists precisely so the nightly
+          # never needs any of that; installing it added ~20 minutes per cold
+          # run to build a geo stack no build step ever loads.
+          dependencies: '"hard"'
           extra-packages: any::sessioninfo
-          cache-version: 1
+          cache-version: 2
 
       - name: Build deck, PPTX, archive and library
         run: Rscript r/build_nightly.R
