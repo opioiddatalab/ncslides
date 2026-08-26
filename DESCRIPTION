@@ -24,7 +24,8 @@ Imports:
     jsonlite,
     yaml,
     officer,
-    flextable
+    flextable,
+    zip
 Suggests:
     sf,
     tigris

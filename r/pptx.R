@@ -13,8 +13,9 @@
 
 library(officer); library(flextable); library(dplyr)
 
-PPTX_W <- 13.333; PPTX_H <- 7.5
+PPTX_W <- 40 / 3; PPTX_H <- 7.5  # 13.33333 x 7.5 in = 16:9; 1920/144 exactly
 PX <- 144                        # px per inch at this slide size
+EMU <- 914400                    # EMU per inch, per the OOXML spec
 px2in <- function(px) px / PX
 
 OUT_PPTX <- "docs/nc-drug-checking-latest.pptx"
@@ -70,10 +71,45 @@ add_table <- function(doc, df, left, top, width, height, max_rows = 12) {
                                           width = width, height = height))
 }
 
+# ------------------------------------------------------------------ template
+# officer ships ONE template and it is 4:3 (10 x 7.5in); slide_size() is a
+# getter with no setter, so a bare read_pptx() silently produces 4:3 slides
+# while the geometry above places content out to 13.333in -- a quarter of every
+# slide off the right edge. There is no officer API for this, so mint a 16:9
+# template per run: rewrite <p:sldSz> in a copy of officer's own.
+pptx_template_16x9 <- function() {
+  src <- system.file("template", "template.pptx", package = "officer")
+  if (!nzchar(src)) stop("officer template.pptx not found", call. = FALSE)
+  dir <- file.path(tempdir(), "pptx16x9")
+  unlink(dir, recursive = TRUE)
+  dir.create(dir, recursive = TRUE)
+  utils::unzip(src, exdir = dir)
+
+  pres <- file.path(dir, "ppt", "presentation.xml")
+  xml  <- paste(readLines(pres, warn = FALSE), collapse = "\n")
+  sldSz <- sprintf('<p:sldSz cx="%.0f" cy="%.0f"/>', PPTX_W * EMU, PPTX_H * EMU)
+  xml2 <- sub("<p:sldSz[^>]*/>", sldSz, xml)
+  if (identical(xml2, xml))
+    stop("no <p:sldSz> in officer's template -- cannot set 16:9", call. = FALSE)
+  writeLines(xml2, pres)
+
+  # [Content_Types].xml must be the first entry in an OPC package.
+  parts <- list.files(dir, all.files = TRUE, no.. = TRUE)
+  parts <- c("[Content_Types].xml", setdiff(parts, "[Content_Types].xml"))
+  out <- file.path(tempdir(), "template-16x9.pptx")
+  unlink(out)
+  zip::zip(out, files = parts, root = dir, mode = "cherry-pick")
+  out
+}
+
 # ---------------------------------------------------------------------- build
 build_pptx <- function(nc, cfg, tables, stats, alt, out = OUT_PPTX) {
   spec <- readr::read_csv(file.path(SLIDE_DIR, "spec.csv"), show_col_types = FALSE)
-  doc <- read_pptx()
+  doc <- read_pptx(pptx_template_16x9())
+  sz <- officer::slide_size(doc)
+  if (abs(sz$width / sz$height - 16 / 9) > 0.01)
+    stop(sprintf("slide size is %.3f x %.3f in (%.3f:1), not 16:9",
+                 sz$width, sz$height, sz$width / sz$height), call. = FALSE)
   layout <- "Blank"; master <- officer::layout_summary(doc)$master[1]
   if (!"Blank" %in% officer::layout_summary(doc)$layout)
     layout <- officer::layout_summary(doc)$layout[1]
