@@ -146,6 +146,20 @@ Rscript r/prep_counties.R   # run locally, commit the .rds
 Rscript r/build_nightly.R
 ```
 
+That writes `docs/`, which is **tracked** — the nightly job commits it and GitHub
+Pages serves it from `main`. So a local build dirties ~90 tracked files, and
+committing one means merging a stale build over the bot's newer one (with
+conflicts on binary PNGs). For a throwaway build, point `DECK_OUT` somewhere
+gitignored:
+
+```bash
+DECK_OUT=build Rscript r/build_nightly.R
+```
+
+Everything — figures, deck, PPTX, archive, library page — moves with it; the two
+paths produce byte-identical output. CI sets nothing and keeps writing `docs/`.
+If you did already build into `docs/`, `git checkout -- docs` discards it.
+
 **R 4.4.3**, matching the Deepnote environment used for interactive development.
 Every dependency's current CRAN floor is `R >= 4.1` or lower, so nothing needs a
 dated-snapshot downgrade. CI pins package *versions* through a dated Posit

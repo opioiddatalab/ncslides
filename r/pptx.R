@@ -18,7 +18,7 @@ PX <- 144                        # px per inch at this slide size
 EMU <- 914400                    # EMU per inch, per the OOXML spec
 px2in <- function(px) px / PX
 
-OUT_PPTX <- "docs/nc-drug-checking-latest.pptx"
+OUT_PPTX <- file.path(OUT_DIR, "nc-drug-checking-latest.pptx")
 
 # --------------------------------------------------------- template text mining
 strip_tags <- function(x) {

@@ -51,7 +51,16 @@ PARTIAL_LABEL <- "partial"
 # ------------------------------------------------------------------ exporting
 # Every figure is written twice: SVG for the HTML deck (text stays real text)
 # and PNG for the PPTX (PowerPoint's SVG support is unreliable across versions).
-FIG_DIR <- "docs/figs"
+# Output root. docs/ is TRACKED -- the nightly job commits it and GitHub Pages
+# serves it -- so a local build writing there dirties ~90 tracked files and
+# invites committing a stale local build over the bot's newer one. Point
+# DECK_OUT elsewhere for a throwaway build:
+#
+#   DECK_OUT=build Rscript r/build_nightly.R
+#
+# CI sets nothing and keeps writing docs/.
+OUT_DIR <- Sys.getenv("DECK_OUT", "docs")
+FIG_DIR <- file.path(OUT_DIR, "figs")
 
 fig_size <- function(kind = c("slide", "half", "third", "spark", "map")) {
   kind <- match.arg(kind)

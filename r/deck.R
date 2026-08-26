@@ -17,7 +17,7 @@
 library(glue); library(htmltools); library(dplyr)
 
 SLIDE_DIR <- "r/slides"
-OUT_HTML  <- "docs/index.html"
+OUT_HTML  <- file.path(OUT_DIR, "index.html")
 
 esc <- function(x) htmltools::htmlEscape(as.character(x))
 

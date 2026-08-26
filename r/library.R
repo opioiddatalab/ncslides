@@ -8,7 +8,7 @@
 
 library(dplyr); library(lubridate)
 
-ARCHIVE_DIR <- "docs/archive"
+ARCHIVE_DIR <- file.path(OUT_DIR, "archive")
 LIB_HTML    <- file.path(ARCHIVE_DIR, "index.html")
 
 month_end <- function(d) ceiling_date(d, "month") - 1

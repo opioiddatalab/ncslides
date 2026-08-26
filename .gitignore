@@ -7,6 +7,9 @@ renv/staging/
 .Ruserdata
 
 # local scratch
+# throwaway deck builds: DECK_OUT=build Rscript r/build_nightly.R
+# (docs/ itself is tracked -- the nightly job publishes it)
+build/
 logs/
 *.log
 .DS_Store
