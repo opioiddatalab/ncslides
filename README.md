@@ -15,6 +15,119 @@ Nothing is hand-updated.
 | Figures | `docs/figs/*.svg` (deck) and `*.png` (PPTX) |
 | Machine-readable summary | `docs/figs/stats.json` |
 
+## Quick start — run it yourself
+
+Reproduces every figure, the deck, the PowerPoint and the archive on your own
+machine in about 20 seconds. Nothing here touches the published site.
+
+**1. Install R 4.4.3.** The version is pinned — CI runs 4.4.3 and it matches the
+Deepnote environment used for interactive work. On an Apple-silicon Mac:
+
+```bash
+curl -O https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.4.3-arm64.pkg
+sudo installer -pkg R-4.4.3-arm64.pkg -target /
+R --version          # expect: R version 4.4.3 (2025-02-28)
+```
+
+Intel Macs want the `x86_64` build; Linux and Windows builds are on the same
+[CRAN page](https://cran.r-project.org/). Nothing else needs installing — no
+Homebrew, no GDAL, no system geo libraries (see
+[Maps without a geo stack](#maps-without-a-geo-stack)).
+
+**2. Get the code.**
+
+```bash
+git clone git@github.com:opioiddatalab/ncslides.git
+cd ncslides
+```
+
+**3. Install the R packages.** This reads `DESCRIPTION`, so it cannot fall out of
+step with what CI installs:
+
+```bash
+Rscript -e 'install.packages(trimws(strsplit(read.dcf("DESCRIPTION")[1,"Imports"], ",")[[1]]), repos="https://cloud.r-project.org")'
+```
+
+20 packages plus their dependencies. On macOS they arrive as prebuilt binaries,
+so this is a few minutes with no compiling. `sf` and `tigris` are in `Suggests`
+and are **not** needed — step 5 explains the one case that wants them.
+
+**4. Build.**
+
+```bash
+DECK_OUT=build Rscript r/build_nightly.R
+```
+
+It downloads the two current NC extracts (~2,700 samples, ~10,800 lab rows), so
+you need a network connection. A healthy run ends:
+
+```
+figures: 55 made, 0 skipped
+copied 3 static file(s) into build
+wrote build/index.html (63 slides, 5.5 Mb)
+wrote build/nc-drug-checking-latest.pptx (63 slides)
+no month-end archive due today          # or "archived: 2026-07-31.html, ..."
+wrote build/archive/index.html (2 archived file(s))
+done in 0.3 min
+```
+
+`0 skipped` matters — a skipped figure means a slide marker has no value.
+
+**Always pass `DECK_OUT`.** Without it the build writes `docs/`, which is
+tracked and published by the nightly job; see [Working on it](#working-on-it).
+
+**5. Look at what you made.**
+
+```bash
+open build/index.html                        # the deck — start here
+open build/nc-drug-checking-latest.pptx      # the PowerPoint export
+open build/figs                              # 55 figures, SVG + PNG each
+```
+
+| You get | Where |
+|---|---|
+| The deck | `build/index.html` |
+| PowerPoint | `build/nc-drug-checking-latest.pptx` |
+| Individual figures | `build/figs/*.svg` and `*.png` |
+| Every number in the deck | `build/figs/stats.json` |
+| Month-end snapshots | `build/archive/` |
+| Viewer + logos, copied in so the local file renders | `build/deck-stage.js`, `build/assets/` |
+
+To check it the way CI does — both run in seconds and need no R:
+
+```bash
+python3 tools/audit_slides.py     # no fabricated numbers left in templates
+python3 tools/check_contract.py   # every slide marker has a value in R
+```
+
+### Rebuilding just one figure
+
+Every chart is a function in `r/figs.R`. To iterate on one without rebuilding
+all 55:
+
+```r
+source("r/theme_unc.R"); source("r/data.R"); source("r/figs.R")
+nc <- load_nc()                      # downloads the extracts once
+f <- fig_top_substances(nc)          # any fig_*() function
+print(f$plot)
+f$alt                                # the generated alt text
+f$table                              # the frame behind the chart
+```
+
+### County maps
+
+`r/nc_counties.rds` is committed, so the maps just work. The only reason to
+regenerate it is a change to county boundaries or region labels, and that is the
+one task needing the dev-only geo packages:
+
+```bash
+Rscript -e 'install.packages(c("sf","tigris"), repos = "https://cloud.r-project.org")'
+Rscript r/prep_counties.R      # expect: 36395 vertices, 100 counties
+```
+
+The CRAN macOS binary of `sf` bundles its own GEOS/GDAL/PROJ, so this still needs
+no Homebrew.
+
 ## Data
 
 Two files, refreshed daily upstream, linked on `sampleid`:
@@ -140,25 +253,15 @@ depend on an external geo service to render. `sf` and `tigris` are dev-only
 Rscript r/prep_counties.R   # run locally, commit the .rds
 ```
 
-## Running it
+## Versions and pinning
 
-```bash
-Rscript r/build_nightly.R
-```
+See [Quick start](#quick-start--run-it-yourself) to actually run it. This section
+is about why the versions are what they are.
 
-That writes `docs/`, which is **tracked** — the nightly job commits it and GitHub
-Pages serves it from `main`. So a local build dirties ~90 tracked files, and
-committing one means merging a stale build over the bot's newer one (with
-conflicts on binary PNGs). For a throwaway build, point `DECK_OUT` somewhere
-gitignored:
-
-```bash
-DECK_OUT=build Rscript r/build_nightly.R
-```
-
-Everything — figures, deck, PPTX, archive, library page — moves with it; the two
-paths produce byte-identical output. CI sets nothing and keeps writing `docs/`.
-If you did already build into `docs/`, `git checkout -- docs` discards it.
+`DECK_OUT` selects the output root and defaults to `docs/`. CI sets nothing and
+so writes `docs/`; local builds should set it, because `docs/` is tracked and
+published. Both paths produce byte-identical output. If you did already build into
+`docs/`, `git checkout -- docs` discards it.
 
 **R 4.4.3**, matching the Deepnote environment used for interactive development.
 Every dependency's current CRAN floor is `R >= 4.1` or lower, so nothing needs a
