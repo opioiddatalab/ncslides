@@ -151,7 +151,24 @@ Every dependency's current CRAN floor is `R >= 4.1` or lower, so nothing needs a
 dated-snapshot downgrade. CI pins package *versions* through a dated Posit
 Package Manager snapshot (`RSPM` in the workflow) — bump that date deliberately,
 never incidentally. `ggplot2 4.0.x` is a major S7 rewrite while this code is 3.x
-idiom; if it misbehaves, pin 3.5.x.
+idiom; it has built the deck cleanly since 4.0.2, but if it misbehaves, pin
+3.5.x.
+
+Two things about that `RSPM` URL that are easy to get wrong:
+
+- **Keep the `__linux__/noble/` segment.** It is what makes Posit serve prebuilt
+  Linux *binaries*. The plain `/cran/<date>/` path is source-only for Linux
+  clients, which means ~20 minutes of compiling `stringi`, `data.table` and
+  friends on every cold run instead of ~2 minutes of downloading.
+- **`runs-on` is pinned to `ubuntu-24.04`, not `ubuntu-latest`,** because
+  `noble` is 24.04's codename. If the runner image moves to a newer Ubuntu while
+  the path still says `noble`, the binaries 404 and pak silently falls back to
+  source builds. Change both together or neither.
+
+CI installs **hard dependencies only** (`dependencies: '"hard"'`). The action's
+default is `'"all"'`, which includes `Suggests` — that pulled in `sf` and
+`tigris`, and with them `s2`, `wk`, `units` and an apt-installed GDAL/PROJ/GEOS,
+none of which the nightly path ever loads. See "Maps without a geo stack" above.
 
 ## Publishing
 

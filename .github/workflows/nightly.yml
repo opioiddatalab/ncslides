@@ -17,13 +17,22 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Pinned, not -latest: the RSPM binary path below names this distro's
+    # codename (noble = 24.04). If the runner moved to a newer Ubuntu the path
+    # would 404 and pak would fall back to building everything from source.
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     env:
       # Dated Posit Package Manager snapshot: deterministic package versions
       # AND prebuilt Linux binaries, so a nightly run takes minutes, not an
       # afternoon of compiling. Bump the date deliberately, never incidentally.
-      RSPM: 'https://packagemanager.posit.co/cran/2026-08-01'
+      #
+      # The __linux__/<codename>/ segment is what makes it serve BINARIES. The
+      # plain /cran/<date>/ path is source-only for Linux clients: pak marked
+      # all 90 packages [bld] and the lockfile read "platform": "source",
+      # "binary": false -- ~20 min of compiling stringi, data.table and friends
+      # on every cold run. Keep the codename in step with runs-on above.
+      RSPM: 'https://packagemanager.posit.co/cran/__linux__/noble/2026-08-01'
 
     steps:
       - uses: actions/checkout@v4
