@@ -43,8 +43,12 @@ archive_snapshot <- function(run_date, html = OUT_HTML, pptx = OUT_PPTX,
   invisible(wrote)
 }
 
+# format.object_size() is scalar-only under units = "auto", so map over the
+# vector -- the archive always holds at least an .html and a .pptx.
 fmt_size <- function(bytes)
-  format(structure(bytes, class = "object_size"), units = "auto", digits = 1)
+  vapply(bytes, function(b)
+    format(structure(b, class = "object_size"), units = "auto", digits = 1),
+    character(1), USE.NAMES = FALSE)
 
 build_library <- function(nc, cfg, dir = ARCHIVE_DIR, out = LIB_HTML) {
   files <- Sys.glob(file.path(dir, "*.*"))

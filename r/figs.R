@@ -556,10 +556,11 @@ fig_top_substances <- function(nc, window_months = NULL, top_n = 15) {
        table = d %>% filter(.data$substance %in% keep) %>%
          select("substance", "abundance", "n") %>%
          pivot_wider(names_from = "abundance", values_from = "n", values_fill = 0) %>%
-         arrange(desc(.data$Primary + .data$`Trace only`)) %>%
+         mutate(total = .data$Primary + .data$`Trace only`) %>%
+         arrange(desc(.data$total)) %>%
          transmute(Substance = .data$substance, Primary = comma(.data$Primary),
                    `Trace only` = comma(.data$`Trace only`),
-                   Total = comma(.data$Primary + .data$`Trace only`)),
+                   Total = comma(.data$total)),
        stats = list())
 }
 
