@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NC region maps — render surface</title>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<style>body{margin:0;background:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}.map{width:900px;height:554px;display:none}.map.on{display:block}</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const CSV=`Dare,eastern
+Tyrrell,eastern
+Beaufort,eastern
+Onslow,eastern
+Pender,eastern
+Pasquotank,eastern
+Chowan,eastern
+Martin,eastern
+Carteret,eastern
+Jones,eastern
+Wilson,eastern
+Wayne,eastern
+Bertie,eastern
+Brunswick,eastern
+Halifax,eastern
+Edgecombe,eastern
+Hertford,eastern
+Northampton,eastern
+Hyde,eastern
+Washington,eastern
+Craven,eastern
+New Hanover,eastern
+Perquimans,eastern
+Scotland,eastern
+Currituck,eastern
+Gates,eastern
+Lenoir,eastern
+Greene,eastern
+Nash,eastern
+Robeson,eastern
+Cumberland,eastern
+Pamlico,eastern
+Sampson,eastern
+Johnston,eastern
+Bladen,eastern
+Camden,eastern
+Pitt,eastern
+Duplin,eastern
+Harnett,eastern
+Columbus,eastern
+Hoke,eastern
+Person,central
+Stanly,central
+Union,central
+Wake,central
+Caswell,central
+Alamance,central
+Moore,central
+Stokes,central
+Anson,central
+Rowan,central
+Vance,central
+Rockingham,central
+Montgomery,central
+Lee,central
+Davidson,central
+Surry,central
+Gaston,central
+Franklin,central
+Orange,central
+Iredell,central
+Warren,central
+Randolph,central
+Chatham,central
+Davie,central
+Yadkin,central
+Durham,central
+Richmond,central
+Forsyth,central
+Granville,central
+Guilford,central
+Cabarrus,central
+Mecklenburg,central
+Lincoln,central
+Henderson,western
+Jackson,western
+Clay,western
+Graham,western
+Caldwell,western
+Yancey,western
+Swain,western
+Catawba,western
+McDowell,western
+Avery,western
+Cleveland,western
+Rutherford,western
+Transylvania,western
+Haywood,western
+Watauga,western
+Wilkes,western
+Burke,western
+Alexander,western
+Ashe,western
+Madison,western
+Mitchell,western
+Macon,western
+Alleghany,western
+Buncombe,western
+Polk,western
+Cherokee,western`;
+const REGION={};CSV.split('\n').forEach(l=>{const[c,r]=l.split(',');REGION[c.trim()]=r.trim();});
+const SUBS=[
+ {slug:'fentanyl',prev:{western:640,central:560,eastern:520},chg:{western:-4,central:-6,eastern:-2}},
+ {slug:'xylazine',prev:{western:310,central:390,eastern:350},chg:{western:8,central:5,eastern:3}},
+ {slug:'meth',prev:{western:480,central:340,eastern:300},chg:{western:2,central:-1,eastern:4}},
+ {slug:'cocaine',prev:{western:180,central:260,eastern:240},chg:{western:6,central:9,eastern:4}}
+];
+const ORDER=['western','central','eastern'];
+const DX={western:-38,central:0,eastern:38};
+const NAVY='#13294B',GRAY='#8A94A6',RED='#C4453C',GRN='#1E8E5A';
+d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3.0.1/counties-10m.json').then(us=>{
+ const geoms=us.objects.counties.geometries.filter(g=>String(g.id).slice(0,2)==='37');
+ const missing=geoms.filter(g=>!REGION[g.properties.name]).map(g=>g.properties.name);
+ if(missing.length)console.warn('counties without region:',missing.join(', '));
+ const extra=Object.keys(REGION).filter(n=>!geoms.some(g=>g.properties.name===n));
+ if(extra.length)console.warn('csv counties not in atlas:',extra.join(', '));
+ const nc={type:'FeatureCollection',features:geoms.map(g=>topojson.feature(us,g))};
+ const proj=d3.geoMercator().fitExtent([[90,120],[1470,700]],nc);
+ const path=d3.geoPath(proj);
+ const merged={},countyFeats={};
+ ORDER.forEach(r=>{merged[r]=topojson.merge(us,geoms.filter(g=>REGION[g.properties.name]===r));
+  countyFeats[r]=geoms.filter(g=>REGION[g.properties.name]===r).map(g=>topojson.feature(us,g));});
+ const stage=d3.select('#stage');
+ function draw(sub,kind,idx){
+  const div=stage.append('div').attr('class','map').attr('id','m'+idx);
+  const svg=div.append('svg').attr('viewBox','0 0 1560 960').attr('width','100%').attr('height','100%');
+  const vals=sub[kind];
+  const maxPrev=d3.max(ORDER.map(r=>sub.prev[r]));
+  ORDER.forEach(r=>{
+   const v=vals[r];
+   let fill;
+   if(kind==='prev'){fill=d3.interpolateRgb('#C9DEEE',NAVY)(0.12+0.72*(v/maxPrev));}
+   else{const mag=Math.min(Math.abs(v)/12,1);
+    fill=v>=0?d3.interpolateRgb('#F3D9D5',RED)(0.2+0.8*mag):d3.interpolateRgb('#D9EEE3',GRN)(0.2+0.8*mag);}
+   const g=svg.append('g').attr('transform',`translate(${DX[r]},0)`);
+   countyFeats[r].forEach(f=>g.append('path').attr('d',path(f)).attr('fill',fill).attr('stroke','#FFFFFF').attr('stroke-width',1.1));
+   g.append('path').attr('d',path(merged[r])).attr('fill','none').attr('stroke',NAVY).attr('stroke-width',2.5);
+   const b=path.bounds(merged[r]);
+   const cx=(b[0][0]+b[1][0])/2, y0=b[1][1];
+   g.append('text').attr('x',cx).attr('y',y0+64).attr('text-anchor','middle')
+    .attr('font-size',46).attr('font-weight',700).attr('letter-spacing',4).attr('fill',GRAY).text(r.toUpperCase());
+   const valTxt=kind==='prev'?v:(v>=0?'+'+v+'%':v+'%');
+   const valCol=kind==='prev'?NAVY:(v>=0?RED:GRN);
+   g.append('text').attr('x',cx).attr('y',y0+158).attr('text-anchor','middle')
+    .attr('font-size',92).attr('font-weight',700).attr('fill',valCol).text(valTxt);
+   if(kind==='prev')g.append('text').attr('x',cx).attr('y',y0+212).attr('text-anchor','middle')
+    .attr('font-size',44).attr('fill',GRAY).text('per 1,000');
+  });
+ }
+ let i=1;
+ SUBS.forEach(s=>{draw(s,'prev',i++);draw(s,'chg',i++);});
+ // coverage maps (m9 all-time, m10 last 12 months): binary county coverage, no explode
+ const NOCOV_ALL=['Tyrrell','Hyde','Camden','Gates','Perquimans','Chowan','Washington','Jones','Pamlico','Graham','Clay','Alleghany','Yancey','Mitchell','Avery','Swain','Currituck','Warren'];
+ const NOCOV_12=NOCOV_ALL.concat(['Bertie','Hertford','Northampton','Martin','Greene','Anson','Montgomery','Caswell','Stokes','Yadkin','Polk','Madison','Cherokee','Macon','Alexander','Watauga','Ashe','Transylvania']);
+ function drawCoverage(idx,nocov,statLabel){
+  const div=stage.append('div').attr('class','map').attr('id','m'+idx);
+  const svg=div.append('svg').attr('viewBox','0 0 1560 960').attr('width','100%').attr('height','100%');
+  const proj2=d3.geoMercator().fitExtent([[60,150],[1500,810]],nc);
+  const path2=d3.geoPath(proj2);
+  let covered=0,total=0;
+  nc.features.forEach(f=>{total++;const off=nocov.includes(f.properties.name);if(!off)covered++;
+   svg.append('path').attr('d',path2(f)).attr('fill',off?'#F0F3F7':'#7BAFD4').attr('stroke','#FFFFFF').attr('stroke-width',1.4);});
+  svg.append('path').attr('d',path2({type:'FeatureCollection',features:nc.features})).attr('fill','none');
+  svg.append('text').attr('x',70).attr('y',80).attr('font-size',72).attr('font-weight',700).attr('fill',NAVY).text(covered+' of '+total+' counties');
+  svg.append('text').attr('x',70).attr('y',134).attr('font-size',44).attr('fill',GRAY).text(statLabel);
+  const ly=900;
+  svg.append('path').attr('d','M70 '+(ly-28)+' h34 v34 h-34 Z').attr('fill','#7BAFD4');
+  svg.append('text').attr('x',116).attr('y',ly).attr('font-size',44).attr('fill','#5B6770').text('\u22651 completed analysis');
+  svg.append('path').attr('d','M700 '+(ly-28)+' h34 v34 h-34 Z').attr('fill','#F0F3F7').attr('stroke','#C8CFDA');
+  svg.append('text').attr('x',746).attr('y',ly).attr('font-size',44).attr('fill','#5B6770').text('No samples yet');
+ }
+ drawCoverage(9,NOCOV_ALL,'with a completed analysis, all time');
+ // m10: choropleth — unique samples per county, last 12 months
+ {
+  const BOOST={Mecklenburg:158,Wake:141,Durham:96,Guilford:84,Forsyth:72,Buncombe:88,'New Hanover':76,Pitt:58,Cumberland:52,Orange:61,Robeson:44,Gaston:38};
+  const hash=s=>{let h=0;for(const ch of s)h=(h*31+ch.charCodeAt(0))>>>0;return h;};
+  const counts={};let total=0,covered=0;
+  nc.features.forEach(f=>{const n=f.properties.name;
+   if(NOCOV_12.includes(n)){counts[n]=0;return;}
+   counts[n]=BOOST[n]||(hash(n)%34+2);total+=counts[n];covered++;});
+  const mx=Math.max(...Object.values(counts));
+  const div=stage.append('div').attr('class','map').attr('id','m10');
+  const svg=div.append('svg').attr('viewBox','0 0 1560 960').attr('width','100%').attr('height','100%');
+  const proj2=d3.geoMercator().fitExtent([[60,150],[1500,810]],nc);
+  const path2=d3.geoPath(proj2);
+  nc.features.forEach(f=>{const v=counts[f.properties.name];
+   const fill=v===0?'#F0F3F7':d3.interpolateRgb('#DCEAF5',NAVY)(Math.sqrt(v/mx));
+   svg.append('path').attr('d',path2(f)).attr('fill',fill).attr('stroke','#FFFFFF').attr('stroke-width',1.4);});
+  svg.append('text').attr('x',70).attr('y',80).attr('font-size',72).attr('font-weight',700).attr('fill',NAVY).text(total.toLocaleString()+' samples');
+  svg.append('text').attr('x',70).attr('y',134).attr('font-size',44).attr('fill',GRAY).text('last 12 months · '+covered+' of '+nc.features.length+' counties');
+  // gradient legend
+  const ly=880,lx=70,lw=460,steps=40;
+  for(let k=0;k<steps;k++){const c=d3.interpolateRgb('#DCEAF5',NAVY)(Math.sqrt((k+0.5)/steps));
+   svg.append('path').attr('d',`M${lx+k*lw/steps} ${ly-30} h${lw/steps+0.5} v32 h-${lw/steps+0.5} Z`).attr('fill',c);}
+  svg.append('text').attr('x',lx).attr('y',ly+42).attr('font-size',40).attr('fill','#5B6770').text('1');
+  svg.append('text').attr('x',lx+lw).attr('y',ly+42).attr('text-anchor','end').attr('font-size',40).attr('fill','#5B6770').text(mx+' samples');
+  svg.append('path').attr('d',`M${lx+620} ${ly-30} h34 v32 h-34 Z`).attr('fill','#F0F3F7').attr('stroke','#C8CFDA');
+  svg.append('text').attr('x',lx+666).attr('y',ly-2).attr('font-size',40).attr('fill','#5B6770').text('No samples');
+ }
+ window.showMap=n=>{document.querySelectorAll('.map').forEach(d=>d.classList.remove('on'));
+  const el=document.getElementById('m'+n);if(el)el.classList.add('on');};
+ window.showMap(1);
+ window.__ready=true;
+});
+</script>
+</body>
+</html>
