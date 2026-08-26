@@ -35,7 +35,10 @@ jobs:
       RSPM: 'https://packagemanager.posit.co/cran/__linux__/noble/2026-08-01'
 
     steps:
-      - uses: actions/checkout@v4
+      # v5 is the first Node 24 release; v6 changed how checkout persists
+      # credentials, which the Publish step's git push depends on -- don't
+      # jump majors without checking that still works.
+      - uses: actions/checkout@v5
 
       - name: Templates carry no leftover mock values
         # Cheap, no R needed, and it fails before a build can publish the

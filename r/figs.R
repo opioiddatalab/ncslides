@@ -539,10 +539,15 @@ fig_top_substances <- function(nc, window_months = NULL, top_n = 15) {
     arrange(desc(.data$total)) %>% head(top_n) %>% pull("substance")
   dd <- d %>% filter(.data$substance %in% keep) %>%
     mutate(abundance = factor(.data$abundance, c("Primary", "Trace only")))
+  # Segments narrower than this stay unlabelled. Computed here, not inside
+  # aes(): it is one constant for the whole panel, and reaching back into dd
+  # from inside aes() is what ggplot2 4.x warns about ("use of dd$total is
+  # discouraged").
+  label_floor <- max(dd$total) * 0.04
   p <- ggplot(dd, aes(.data$n, fct_reorder(.data$substance, .data$total),
                       fill = .data$abundance)) +
     geom_col(color = unc$body, linewidth = 0.25) +
-    geom_text(aes(label = ifelse(.data$n > max(dd$total) * 0.04, comma(.data$n), "")),
+    geom_text(aes(label = ifelse(.data$n > label_floor, comma(.data$n), "")),
               position = position_stack(vjust = 0.5), size = 3.9, color = unc$navy) +
     scale_fill_primarytrace() +
     scale_x_continuous(labels = comma, expand = expansion(mult = c(0, 0.06))) +
