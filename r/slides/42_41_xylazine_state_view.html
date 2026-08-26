@@ -1,0 +1,15 @@
+<section data-label="41 Xylazine State View" data-speaker-notes="Legacy OCME-style summary the state expects: month-vs-last-year headline, month-to-month lines, year-to-year YTD bars, co-detection mix. Counts of xylazine-positive samples (any abundance), not deaths." style="background:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5B6770;display:flex;flex-direction:column;box-sizing:border-box" data-om-slide-id="84e60d19">
+  <div style="background:#13294B;padding:26px 90px;display:flex;justify-content:space-between;align-items:center;gap:40px">
+    <h2 style="font-size:40px;font-weight:700;color:#FFFFFF;margin:0;line-height:1.2">Xylazine-Positive Samples, UNC Street Drug Analysis Lab (Drug Checking) Data: {{STAT:latest_month}}*</h2>
+    <p style="display:{{ noteDisplay }};font-family:Menlo,monospace;font-size:24px;color:#B45D08;border:2px dashed #B45D08;padding:8px 16px;margin:0;white-space:nowrap">PLACEHOLDER · nightly R</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0 56px;padding:26px 90px 18px;min-height:0">
+    <div style="display:flex;flex-direction:column;gap:12px;min-height:0">{{CHART:state_xylazine_years}}</div>
+    <div style="display:flex;flex-direction:column;gap:12px;min-height:0">{{CHART:state_xylazine_line}}</div>
+  </div>
+  <div style="background:#13294B;padding:14px 90px;display:flex;justify-content:space-between;align-items:center">
+    <p style="font-size:24px;color:#FFFFFF;margin:0">UNC Street Drug Analysis Lab · opioiddata.org</p>
+    <p style="display:{{ rTagDisplay }};font-size:24px;color:#7BAFD4;font-family:Menlo,monospace;margin:0">r/figs.R::fig_state_view("xylazine") → figs/state_xylazine_{years,line}.png</p>
+    <p style="font-size:24px;color:#FFFFFF;margin:0">{{STAT:run_date}}</p>
+  </div>
+</section>

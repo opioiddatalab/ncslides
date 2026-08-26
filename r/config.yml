@@ -1,0 +1,34 @@
+# Build-time configuration for the nightly NC Drug Checking deck.
+# Values here are either audience choices or facts the public NC extract
+# cannot supply. Everything else is derived from the data.
+
+# --- Facts not present in the data -------------------------------------------
+# The codebook documents a `program` variable, but the public NC extract
+# (data.streetsafe.supply/datasets/NC/analysis_dataset.csv) omits it, so the
+# number of contributing harm reduction programs is NOT computable. It is
+# maintained here by the lab and shown on slide 10 with an explicit note.
+# Update this when the program roster changes.
+n_programs: 86
+n_programs_asof: "2026-08-01"
+
+# --- Audience toggles (resolve the deck's {{ }} template vars) ---------------
+# show_r_tags: the "r/figs.R::fn -> figs/x.png" provenance line in slide
+#   footers. Useful internally, noise for an external audience.
+# show_placeholder_notes: the orange dashed "PLACEHOLDER - nightly R" badge.
+#   Must be FALSE for any real build; TRUE only to preview the design.
+show_r_tags: true
+show_placeholder_notes: false
+
+# --- Analytic parameters (see HANDOFF.md "Analytic contract") ---------------
+# Window for "new to NC": first-ever NC detection within this many days of the
+# latest date_complete in the data (NOT of the run date - the extract lags).
+new_detection_window_days: 91
+# Median samples per complete month required before trend charts use monthly
+# rather than quarterly periods.
+min_monthly_n: 30
+
+# --- Licensing / attribution -------------------------------------------------
+# Repo is CC0-1.0, which waives attribution; the deck therefore REQUESTS
+# rather than requires it. Keep these consistent with LICENSE.
+license_label: "CC0 1.0 (public domain dedication)"
+attribution: "UNC Street Drug Analysis Lab · OpioidData.org"

@@ -1,0 +1,5 @@
+:root{--type-title:64px;--type-sub:34px;--type-body:32px;--type-small:24px;--pad-x:110px;--pad-top:88px;--pad-bottom:76px}
+body{margin:0;background:#0F1215}
+a{color:#3A6D99;text-decoration:underline;text-underline-offset:4px}
+a:focus-visible{outline:3px solid #13294B;outline-offset:3px}
+a:hover{color:#13294B}

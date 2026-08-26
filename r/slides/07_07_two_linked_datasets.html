@@ -1,0 +1,26 @@
+<section data-label="07 Two Linked Datasets" data-speaker-notes="analysis_dataset wide, lab_detail long, linked by sampleid." style="background:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5B6770;display:flex;flex-direction:column;padding:88px 110px 76px;box-sizing:border-box" data-om-slide-id="caacace9">
+  <p style="font-size:26px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#3A6D99;margin:0">The Data</p>
+  <h2 style="font-size:64px;font-weight:700;color:#13294B;margin:12px 0 0;line-height:1.1">Two Linked Datasets</h2>
+  <div style="flex:1;display:flex;align-items:center;gap:48px;margin-top:48px">
+    <div style="flex:1;min-width:0;border:2px solid #7BAFD4;padding:40px 44px;display:flex;flex-direction:column;gap:18px">
+      <p style="font-family:Menlo,monospace;font-size:30px;color:#13294B;font-weight:700;margin:0">analysis_dataset.csv</p>
+      <p style="font-size:27px;margin:0;line-height:1.5"><strong>Wide · one row per sample.</strong> Everything from the card — location, dates, expected substance, sensations, overdose involvement — plus ~60 derived <span style="font-family:Menlo,monospace;font-size:25px">lab_*</span> 1/0 flags.</p>
+      <p style="font-size:25px;color:#667180;margin:0">96 variables · quarterly denominators come from here</p>
+      <p style="font-family:Menlo,monospace;font-size:24px;margin:0;border-top:1px solid #E2E8F0;padding-top:14px;overflow-wrap:anywhere"><a href="https://data.streetsafe.supply/datasets/NC/analysis_dataset.csv" style="color:#3A6D99;text-decoration:none">data.streetsafe.supply/datasets/NC/analysis_dataset.csv</a></p>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+      <p style="font-family:Menlo,monospace;font-size:28px;color:#B45D08;font-weight:700;margin:0">sampleid</p>
+      <p aria-hidden="true" style="font-size:40px;color:#B45D08;margin:0">⟷</p>
+    </div>
+    <div style="flex:1;min-width:0;border:2px solid #C9DEEE;padding:40px 44px;display:flex;flex-direction:column;gap:18px">
+      <p style="font-family:Menlo,monospace;font-size:30px;color:#13294B;font-weight:700;margin:0">lab_detail.csv</p>
+      <p style="font-size:27px;margin:0;line-height:1.5"><strong>Long · one row per substance per sample.</strong> Standardized <span style="font-family:Menlo,monospace;font-size:25px">substance</span> name, method (GCMS), <span style="font-family:Menlo,monospace;font-size:25px">abundance</span> (blank = primary, "trace"), chemical-class flags, PubChem CID / CAS / UNII.</p>
+      <p style="font-size:25px;color:#667180;margin:0">Source for substance-level counts and new detections</p>
+      <p style="font-family:Menlo,monospace;font-size:24px;margin:0;border-top:1px solid #E2E8F0;padding-top:14px;overflow-wrap:anywhere"><a href="https://data.streetsafe.supply/datasets/NC/lab_detail.csv" style="color:#3A6D99;text-decoration:none">data.streetsafe.supply/datasets/NC/lab_detail.csv</a></p>
+    </div>
+  </div>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;border-top:2px solid #E2E8F0;padding-top:22px">
+    <p style="font-size:24px;color:#667180;margin:0">Direct downloads above · refreshed daily · also in Stata, Excel, SAS at data.streetsafe.supply/datasets/NC/</p>
+    <p style="display:{{ rTagDisplay }};font-size:24px;color:#3A6D99;font-family:Menlo,monospace;margin:0">r/data.R::load_nc()</p>
+  </div>
+</section>
