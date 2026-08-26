@@ -83,6 +83,12 @@ fig_samples_quarterly <- function(nc) {
 # 12 -- county coverage: ever, and unique samples in the trailing 12 months
 fig_county_coverage <- function(nc, counties) {
   if (!has_cols(nc$card, "county_clean", "county coverage")) return(NULL)
+  # build_nightly.R passes NULL when r/nc_counties.rds is absent and promises
+  # the maps are skipped -- so skip, rather than dying on counties$county.
+  if (is.null(counties)) {
+    warning("skipping county coverage: no counties table", call. = FALSE)
+    return(NULL)
+  }
   total <- length(unique(counties$county))
 
   draw <- function(window_months, slug) {
@@ -835,6 +841,10 @@ fig_state_view <- function(nc, key, metric) {
 fig_region_maps <- function(nc, key, metric, counties) {
   fp <- flag_pair(nc, metric)
   if (is.null(fp)) return(NULL)
+  if (is.null(counties)) {
+    warning("skipping maps: no counties table", call. = FALSE)
+    return(NULL)
+  }
   if (!"region" %in% names(counties)) {
     warning("skipping maps: counties table has no region column", call. = FALSE)
     return(NULL)

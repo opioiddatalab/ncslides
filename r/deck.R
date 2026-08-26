@@ -117,9 +117,20 @@ APPENDIX_OF <- c("07_samples_quarterly" = "A1", "09_expected_substances" = "A2",
 
 # ------------------------------------------------------------------- assembly
 substitute_markers <- function(html, file, stats, alt, tables, cfg, used) {
-  # the design's own two vars first
-  html <- gsub("{{ noteDisplay }}",
-               if (isTRUE(cfg$show_placeholder_notes)) "block" else "none", html, fixed = TRUE)
+  # The design's own two vars first. The orange PLACEHOLDER badge is DELETED
+  # rather than hidden on a real build: display:none still leaves the word
+  # "placeholder" in the published HTML, next to numbers that are now real, and
+  # the workflow's placeholder gate (correctly) cannot tell hidden scaffolding
+  # from live copy. show_placeholder_notes: true restores it for design preview.
+  if (isTRUE(cfg$show_placeholder_notes)) {
+    html <- gsub("{{ noteDisplay }}", "block", html, fixed = TRUE)
+  } else {
+    html <- gsub("<p style=\"display:\\{\\{ noteDisplay \\}\\};[^>]*>[^<]*</p>",
+                 "", html, perl = TRUE)
+    # any stray survivor (markup that does not match the badge shape) still
+    # resolves, so a template change cannot leave a raw marker in the deck
+    html <- gsub("{{ noteDisplay }}", "none", html, fixed = TRUE)
+  }
   html <- gsub("{{ rTagDisplay }}",
                if (isTRUE(cfg$show_r_tags)) "flex" else "none", html, fixed = TRUE)
 
