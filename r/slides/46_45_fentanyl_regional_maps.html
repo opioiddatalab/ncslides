@@ -1,0 +1,23 @@
+<section data-label="45 Fentanyl Regional Maps" data-speaker-notes="Three state regions (eastern/central/western per the county mapping), slightly exploded for readability. Left: fentanyl-positive samples per 1,000 completed in the region, last complete quarter. Right: % change vs the prior quarter — red up, green down. Regional n can be small; quarterly granularity keeps rates stable." style="background:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5B6770;display:flex;flex-direction:column;box-sizing:border-box" data-om-slide-id="ea2c738e">
+  <div style="background:#13294B;padding:26px 90px;display:flex;justify-content:space-between;align-items:center;gap:40px">
+    <h2 style="font-size:40px;font-weight:700;color:#FFFFFF;margin:0;line-height:1.2">Fentanyl by Region, UNC Street Drug Analysis Lab (Drug Checking) Data: {{STAT:latest_q}}</h2>
+    <p style="display:{{ noteDisplay }};font-family:Menlo,monospace;font-size:24px;color:#B45D08;border:2px dashed #B45D08;padding:8px 16px;margin:0;white-space:nowrap">PLACEHOLDER · nightly R</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0 56px;padding:30px 90px 16px;min-height:0">
+    <div style="display:flex;flex-direction:column;gap:6px;min-height:0">
+      <p style="font-size:30px;font-weight:700;color:#13294B;margin:0">Prevalence per 1,000 samples</p>
+      <p style="font-size:24px;color:#667180;margin:0">Fentanyl-positive (any abundance) per 1,000 samples completed in the region, {{STAT:latest_q}}</p>
+      <div style="flex:1;min-height:0">{{CHART:maps_fentanyl_prev}}</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;min-height:0">
+      <p style="font-size:30px;font-weight:700;color:#13294B;margin:0">Change from last quarter</p>
+      <p style="font-size:24px;color:#667180;margin:0">% change in the regional rate, {{STAT:latest_q}} vs {{STAT:prev_q}} · <span style="color:#C4453C;font-weight:700">red = increase</span> · <span style="color:#147246;font-weight:700">green = decrease</span></p>
+      <div style="flex:1;min-height:0">{{CHART:maps_fentanyl_chg}}</div>
+    </div>
+  </div>
+  <div style="background:#13294B;padding:14px 90px;display:flex;justify-content:space-between;align-items:center">
+    <p style="font-size:24px;color:#FFFFFF;margin:0">Regions assigned by county of sample collection · r/nc_county_regions.csv</p>
+    <p style="display:{{ rTagDisplay }};font-size:24px;color:#7BAFD4;font-family:Menlo,monospace;margin:0">r/figs.R::fig_region_maps("fentanyl") → figs/maps_fentanyl_{prev,chg}.png</p>
+    <p style="font-size:24px;color:#FFFFFF;margin:0">{{STAT:run_date}}</p>
+  </div>
+</section>

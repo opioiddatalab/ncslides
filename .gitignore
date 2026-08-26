@@ -1,0 +1,12 @@
+# renv library (restored from renv.lock)
+renv/library/
+renv/staging/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# local scratch
+logs/
+*.log
+.DS_Store

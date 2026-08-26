@@ -1,0 +1,61 @@
+<section data-label="37 Two-Year Dashboard" data-speaker-notes="Two-year monthly view of headline metrics. Deltas compare the last two COMPLETE months; green means moving in the favorable direction (participation up, supply signals down). Final point on each sparkline is the in-progress month." style="background:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5B6770;display:flex;flex-direction:column;padding:72px 100px 56px;box-sizing:border-box" data-om-slide-id="1508d5b2">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <div><p style="font-size:26px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#3A6D99;margin:0">Two-Year Trends</p>
+    <h2 style="font-size:64px;font-weight:700;color:#13294B;margin:12px 0 0;line-height:1.1">Key Metrics, Last 24 Months</h2></div>
+    <p style="display:{{ noteDisplay }};font-family:Menlo,monospace;font-size:24px;color:#B45D08;border:2px dashed #B45D08;padding:10px 18px;margin:0;white-space:nowrap">PLACEHOLDER · nightly R</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:20px;margin-top:36px;min-height:0">
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Samples completed</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_samples_val}}</p><p style="font-size:24px;color:#667180;margin:0">/ month</p>{{STAT:dash_samples_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_samples}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Fentanyl (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_fentanyl_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_fentanyl_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_fentanyl}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Fentanyl impurities (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_fent_impurities_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_fent_impurities_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_fent_impurities}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Xylazine (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_xylazine_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_xylazine_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_xylazine}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Medetomidine (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_medetomidine_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_medetomidine_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_medetomidine}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Methamphetamine (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_meth_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_meth_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_meth}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Cocaine (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_cocaine_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_cocaine_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_cocaine}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Levamisole (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_levamisole_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_levamisole_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_levamisole}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Carfentanil (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_carfentanil_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_carfentanil_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_carfentanil}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Nitazenes (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_nitazenes_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_nitazenes_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_nitazenes}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">BTMPS (any)</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_btmps_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_btmps_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_btmps}}</div>
+    <div style="border:2px solid #E2E8F0;padding:18px 22px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0">
+      <p style="font-size:24px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#667180;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Overdose-involved</p>
+      <div style="display:flex;align-items:baseline;gap:12px"><p style="font-size:44px;font-weight:700;color:#13294B;margin:0">{{STAT:dash_overdose_val}}</p><p style="font-size:24px;color:#667180;margin:0">per 1,000</p>{{STAT:dash_overdose_badge}}</div>
+      <div style="flex:1;min-height:0">{{CHART:dash_overdose}}</div>
+  </div>
+  <div style="margin-top:24px;display:flex;justify-content:space-between;align-items:flex-end;border-top:2px solid #E2E8F0;padding-top:18px">
+    <p style="font-size:24px;color:#667180;margin:0">Monthly values, trailing 24 months from run date · line = LOESS on complete months · Δ = last complete month vs prior · green = favorable direction · orange point* = partial month · data table: Appendix A4</p>
+    <p style="display:{{ rTagDisplay }};font-size:24px;color:#3A6D99;font-family:Menlo,monospace;margin:0">r/figs.R::fig_trend_dashboard → figs/27_dashboard.png</p>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<section data-label="02 About" data-speaker-notes="Set expectations: automated, quarterly rates, placeholder charts until R wiring." style="background:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5B6770;display:flex;flex-direction:column;padding:88px 110px 76px;box-sizing:border-box" data-om-slide-id="e1fdbedb">
+  <p style="font-size:26px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#3A6D99;margin:0">Orientation</p>
+  <h2 style="font-size:64px;font-weight:700;color:#13294B;margin:12px 0 0;line-height:1.1">About This Slide Deck</h2>
+  <div style="flex:1;display:flex;gap:80px;margin-top:56px">
+    <ul style="flex:1;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:34px;font-size:32px;line-height:1.5">
+      <li>Rebuilt <strong style="color:#B45D08">every night</strong> from the daily North Carolina extracts of the UNC drug checking datasets.</li>
+      <li>Designed for <strong style="color: rgb(19, 41, 75);">public health officials and researchers</strong> — every figure names the exact variables behind it.</li>
+      <li>Rates are <strong style="color: #B45D08;">per 1,000 unique samples completed per unit time</strong>; the month/current quarter is labeled partial.</li>
+      <li>Charts state whether substance detections counts are in&nbsp;<strong style="color: rgb(19, 41, 75);">primary</strong>&nbsp;or&nbsp;<strong style="color: rgb(19, 41, 75);">trace</strong>&nbsp;abundance.<br><br>All slides in this deck are made placed in public domain and available for public reuse without any additional permission.</li>
+    </ul>
+    <div style="width:560px;background:#F4F8FB;border:1px solid #E2E8F0;padding:44px 48px;display:flex;flex-direction:column;gap:26px">
+      <p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#3A6D99;margin:0">Nightly pipeline</p>
+      <p style="font-size:28px;margin:0;line-height:1.5">1&nbsp; Upstream CSVs refresh daily</p>
+      <p style="font-size:28px;margin:0;line-height:1.5">2&nbsp; <span style="font-family:Menlo,monospace;font-size:26px;color:#13294B">Rscript r/build_nightly.R</span> at 2:30 AM</p>
+      <p style="font-size:28px;margin:0;line-height:1.5">3&nbsp; ggplot2 figures + stats land in <span style="font-family:Menlo,monospace;font-size:26px;color:#13294B">figs/</span></p>
+      <p style="font-size:28px;margin:0;line-height:1.5">4&nbsp; This deck re-renders with fresh numbers</p>
+    </div>
+  </div>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;border-top:2px solid #E2E8F0;padding-top:22px">
+    <p style="font-size:24px;color:#667180;margin:0">Charts in this design show illustrative placeholder values until the R wiring replaces them.</p>
+    <p style="display:{{ rTagDisplay }};font-size:24px;color:#3A6D99;font-family:Menlo,monospace;margin:0">r/build_nightly.R</p>
+  </div>
+</section>

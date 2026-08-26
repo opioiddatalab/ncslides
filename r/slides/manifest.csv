@@ -1,0 +1,64 @@
+order,file,label,bytes
+1,01_01_title.html,01 Title,1068
+2,02_02_about.html,02 About,2925
+3,03_03_s_methods.html,03 § Methods,859
+4,04_04_how_samples_reach_the_lab.html,04 How Samples Reach the Lab,2117
+5,05_05_sample_collection.html,05 Sample Collection,3772
+6,06_06_lab_methods.html,06 Lab Methods,4355
+7,07_07_two_linked_datasets.html,07 Two Linked Datasets,3446
+8,08_08_primary_vs_trace.html,08 Primary vs Trace,3381
+9,09_08b_accessibility.html,08b Accessibility,2634
+10,10_09_s_coverage.html,09 § Coverage,886
+11,11_10_nc_at_a_glance.html,10 NC at a Glance,2171
+12,12_11_samples_by_quarter.html,11 Samples by Quarter,5969
+13,13_12_county_coverage.html,12 County Coverage,2564
+14,14_13_s_card.html,13 § Card,790
+15,15_14_expected_substances.html,14 Expected Substances,3939
+16,16_15_expectation_vs_lab.html,15 Expectation vs Lab,3027
+17,17_16_sensations.html,16 Sensations,4157
+18,18_17_sensations_by_key_substance.html,17 Sensations by Key Substance,7884
+19,19_18_sensation_shift_stimulants.html,18 Sensation Shift · Stimulants,9123
+20,20_19_sensation_shift_opioids_benzos.html,19 Sensation Shift · Opioids + Benzos,9416
+21,21_20_overdose_involvement.html,20 Overdose Involvement,5998
+22,22_21_color_and_texture.html,21 Color and Texture,5242
+23,23_22_s_lab.html,22 § Lab,773
+24,24_23_substances_per_sample.html,23 Substances per Sample,6697
+25,25_24_top_substances.html,24 Top Substances,5425
+26,26_25_top_substances_12_months.html,25 Top Substances · 12 Months,5583
+27,27_26_substances_per_sample_12_months.html,26 Substances per Sample · 12 Months,6897
+28,28_27_fentanyl.html,27 Fentanyl,10843
+29,29_28_fentanyl_impurities.html,28 Fentanyl Impurities,10993
+30,30_29_xylazine.html,29 Xylazine,10971
+31,31_30_medetomidine.html,30 Medetomidine,10984
+32,32_31_methamphetamine.html,31 Methamphetamine,10909
+33,33_32_cocaine.html,32 Cocaine,10890
+34,34_33_levamisole.html,33 Levamisole,11019
+35,35_34_carfentanil.html,34 Carfentanil,10927
+36,36_35_nitazenes.html,35 Nitazenes,10925
+37,37_36_btmps.html,36 BTMPS,10901
+38,38_37_two_year_dashboard.html,37 Two-Year Dashboard,34160
+39,39_38_opioid_stimulant_overlap.html,38 Opioid-Stimulant Overlap,3918
+40,40_39_s_state_view.html,39 § State View,941
+41,41_40_fentanyl_state_view.html,40 Fentanyl State View,18602
+42,42_41_xylazine_state_view.html,41 Xylazine State View,17330
+43,43_42_methamphetamine_state_view.html,42 Methamphetamine State View,16754
+44,44_43_cocaine_state_view.html,43 Cocaine State View,17972
+45,45_44_s_maps.html,44 § Maps,937
+46,46_45_fentanyl_regional_maps.html,45 Fentanyl Regional Maps,2816
+47,47_46_xylazine_regional_maps.html,46 Xylazine Regional Maps,2816
+48,48_47_methamphetamine_regional_maps.html,47 Methamphetamine Regional Maps,2842
+49,49_48_cocaine_regional_maps.html,48 Cocaine Regional Maps,2806
+50,50_49_s_new.html,49 § New,759
+51,51_50_new_to_nc.html,50 New to NC,3877
+52,52_51_watchlist.html,51 Watchlist,2338
+53,53_52_s_fine_print.html,52 § Fine Print,722
+54,54_53_data_caveats.html,53 Data Caveats,2224
+55,55_54_variable_reference.html,54 Variable Reference,2582
+56,56_55_data_access.html,55 Data Access,2712
+57,57_55b_s_appendix.html,55b § Appendix,833
+58,58_55c_a1_quarterly_samples_table.html,55c A1 Quarterly Samples Table,4633
+59,59_55d_a2_expected_substances_table.html,55d A2 Expected Substances Table,3270
+60,60_55e_a3_expectation_vs_lab_table.html,55e A3 Expectation vs Lab Table,2446
+61,61_55f_a4_key_substance_rates_table.html,55f A4 Key Substance Rates Table,4912
+62,62_55g_a5_new_detections_table.html,55g A5 New Detections Table,4359
+63,63_56_credits.html,56 Credits,963

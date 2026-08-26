@@ -1,0 +1,84 @@
+name: nightly deck
+
+on:
+  schedule:
+    # 07:30 UTC ~ 03:30 America/New_York, after the upstream daily refresh.
+    # GitHub's scheduler is best-effort and can run late; harmless here.
+    - cron: '30 7 * * *'
+  workflow_dispatch:          # build on demand without waiting for tomorrow
+
+# Never let two builds race for the same commit.
+concurrency:
+  group: nightly-deck
+  cancel-in-progress: false
+
+permissions:
+  contents: write             # the job publishes its own output; no PAT needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      # Dated Posit Package Manager snapshot: deterministic package versions
+      # AND prebuilt Linux binaries, so a nightly run takes minutes, not an
+      # afternoon of compiling. Bump the date deliberately, never incidentally.
+      RSPM: 'https://packagemanager.posit.co/cran/2026-08-01'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Templates carry no leftover mock values
+        # Cheap, no R needed, and it fails before a build can publish the
+        # design's fabricated placeholder numbers as though they were real.
+        run: python3 tools/audit_slides.py
+
+      - name: Templates and R agree on every marker
+        # deck.R aborts on an unresolved marker anyway; this catches a renamed
+        # figure or dropped stat in seconds instead of minutes.
+        run: python3 tools/check_contract.py
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.3'   # matches the Deepnote environment used for dev
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::sessioninfo
+          cache-version: 1
+
+      - name: Build deck, PPTX, archive and library
+        run: Rscript r/build_nightly.R
+
+      - name: Deck contains no unresolved markers
+        run: |
+          set -euo pipefail
+          test -s docs/index.html
+          if grep -q '{{' docs/index.html; then
+            echo "::error::unresolved template markers reached the deck"
+            grep -o '{{[^}]*}}' docs/index.html | sort -u | head -20
+            exit 1
+          fi
+          if grep -qi 'placeholder' docs/index.html; then
+            echo "::error::placeholder text reached the deck"
+            exit 1
+          fi
+          echo "slides: $(grep -c '<section' docs/index.html)"
+
+      - name: Publish
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A docs
+          if git diff --cached --quiet; then
+            echo 'no change in docs/ -- nothing to publish'
+            exit 0
+          fi
+          git commit -m "nightly deck: data through $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Session info on failure
+        if: failure()
+        run: Rscript -e 'sessioninfo::session_info()'

@@ -1,0 +1,30 @@
+Package: ncslides
+Title: Nightly NC Drug Checking Deck
+Version: 0.1.0
+Description: Build scripts for the nightly North Carolina drug checking slide
+    deck. Not a library -- this DESCRIPTION exists so CI can resolve and cache
+    the dependency set.
+Encoding: UTF-8
+Imports:
+    dplyr,
+    readr,
+    tidyr,
+    lubridate,
+    zoo,
+    forcats,
+    stringr,
+    scales,
+    purrr,
+    tibble,
+    tidytext,
+    ggplot2,
+    svglite,
+    glue,
+    htmltools,
+    jsonlite,
+    yaml,
+    officer,
+    flextable
+Suggests:
+    sf,
+    tigris
