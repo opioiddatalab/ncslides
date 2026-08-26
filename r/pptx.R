@@ -37,10 +37,31 @@ first_match <- function(html, pattern) {
 }
 
 slide_text <- function(html) {
+  # The footer sits below the last border-top rule. Searching the whole slide
+  # and taking the first hit grabs any earlier muted <p> instead -- on the KPI
+  # dashboard that is a tile's "/ month" unit label, not the caption.
+  tail_html <- html
+  cut <- gregexpr("border-top:2px solid", html, fixed = TRUE)[[1]]
+  if (cut[1] != -1) tail_html <- substring(html, cut[length(cut)])
   list(
     eyebrow = first_match(html, "letter-spacing:[45]px;text-transform:uppercase;[^\"]*\"[^>]*>(.*?)</p>"),
     title   = first_match(html, "<h[12][^>]*>([\\s\\S]*?)</h[12]>"),
-    footer  = first_match(html, sprintf("<p style=\"font-size:24px;color:%s;margin:0\">([\\s\\S]*?)</p>", unc$muted)))
+    footer  = first_match(tail_html, sprintf("<p style=\"font-size:24px;color:%s;margin:0\">([\\s\\S]*?)</p>", unc$muted)))
+}
+
+# KPI dashboard tiles, read straight out of the template so the two outputs
+# cannot disagree about which metric sits in which cell.
+kpi_tiles <- function(html) {
+  grab <- function(pat) regmatches(html, gregexpr(pat, html, perl = TRUE))[[1]]
+  labs  <- sub(".*>", "", sub("</p>$", "", grab("text-overflow:ellipsis\">[^<]*</p>")))
+  slugs <- gsub("\\{\\{CHART:|\\}\\}", "", grab("\\{\\{CHART:[a-z_]+\\}\\}"))
+  units <- sub(".*>", "", sub("</p>$", "",
+                grab("<p style=\"font-size:24px;color:#667180;margin:0\">(?:/ month|per 1,000)</p>")))
+  n <- min(length(labs), length(slugs))
+  if (!n) return(NULL)
+  data.frame(label = labs[seq_len(n)], slug = slugs[seq_len(n)],
+             unit = if (length(units) >= n) units[seq_len(n)] else "",
+             stringsAsFactors = FALSE)
 }
 
 # ------------------------------------------------------------------- elements
@@ -145,6 +166,36 @@ build_pptx <- function(nc, cfg, tables, stats, alt, out = OUT_PPTX) {
         doc <- add_table(doc, tables[[ids[1]]], pad, body_top, half, body_h)
         doc <- add_table(doc, tables[[ids[2]]], pad + half + px2in(56), body_top,
                          half, body_h)
+      }
+    } else if (row$archetype == "kpi12") {
+      # A 4x3 grid, matching the HTML. The generic multi-chart branch below
+      # lays every chart in ONE row, which for 12 sparklines means 12 tall
+      # slivers with no labels and no numbers.
+      tl <- kpi_tiles(html)
+      if (!is.null(tl)) {
+        ncol <- 4; nrow_g <- ceiling(nrow(tl) / ncol); gap <- px2in(20)
+        cw <- (body_w - gap * (ncol - 1)) / ncol
+        ch <- (body_h - gap * (nrow_g - 1)) / nrow_g
+        lab_h <- px2in(30); val_h <- px2in(46)
+        for (k in seq_len(nrow(tl))) {
+          cx <- pad + ((k - 1) %% ncol) * (cw + gap)
+          cy <- body_top + ((k - 1) %/% ncol) * (ch + gap)
+          doc <- add_text(doc, txt(toupper(tl$label[k]), 9, unc$muted, TRUE),
+                          cx, cy, cw, lab_h)
+          val <- stats[[paste0(tl$slug[k], "_val")]]
+          if (!is.null(val)) {
+            lbl <- if (nzchar(tl$unit[k])) paste(val, tl$unit[k]) else as.character(val)
+            doc <- add_text(doc, txt(lbl, 16, unc$navy, TRUE), cx, cy + lab_h, cw, val_h)
+          }
+          png <- file.path(FIG_DIR, paste0(tl$slug[k], ".png"))
+          if (file.exists(png))
+            doc <- ph_with(doc, external_img(png, width = cw,
+                                             height = ch - lab_h - val_h),
+                           location = ph_location(left = cx, top = cy + lab_h + val_h,
+                                                  width = cw,
+                                                  height = ch - lab_h - val_h),
+                           alt_text = alt[[tl$slug[k]]] %||% tl$slug[k])
+        }
       }
     } else if (length(charts)) {
       pngs <- file.path(FIG_DIR, paste0(charts, ".png"))
