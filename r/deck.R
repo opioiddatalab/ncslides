@@ -97,6 +97,12 @@ global_stats <- function(nc, cfg, lab_substances) {
     latest_date  = format(nc$latest, "%d %b %Y"),
     latest_date_prior_year = format(nc$latest %m-% years(1), "%d %b %Y"),
     run_date     = format(nc$run_date, "%d %b %Y"),
+    # The title slide's "Generated ..." line. It shipped as a hardcoded design
+    # literal ("Tuesday, August 25, 2026") on a deck that rebuilds nightly, and
+    # tools/audit_slides.py deliberately ignores static slides, so nothing
+    # caught it. TZ is set to America/New_York in build_nightly.R.
+    generated_at = sprintf("%s · %s ET", format(Sys.time(), "%A, %B %d, %Y"),
+                           sub("^0", "", format(Sys.time(), "%I:%M %p"))),
     run_date_prior_year = format(nc$run_date %m-% years(1), "%d %b %Y"),
     latest_q     = fmt_q(last_complete),
     prev_q       = fmt_q(last_complete %m-% months(3)),
@@ -114,6 +120,32 @@ APPENDIX_OF <- c("07_samples_quarterly" = "A1", "09_expected_substances" = "A2",
                  "10_expect_vs_lab" = "A3", "17_fentanyl_trend" = "A4",
                  "19_xylazine_trend" = "A4", "21_meth_trend" = "A4",
                  "22_cocaine_trend" = "A4")
+
+# --------------------------------------------------------------- static files
+# The deck references three local files: the two logo banners and deck-stage.js,
+# the viewer that scales a 1920x1080 slide to the window. None of them were ever
+# copied into the output directory, so on GitHub Pages -- where docs/ IS the site
+# root -- all three 404'd: no logos, and no viewer, which is why the published
+# deck rendered as bare stacked sections.
+STATIC_FILES <- c("deck-stage.js")
+STATIC_DIRS  <- c("assets")
+
+copy_static <- function(out_dir) {
+  copied <- 0L
+  for (f in STATIC_FILES) {
+    if (!file.exists(f)) { warning("missing static file: ", f, call. = FALSE); next }
+    if (file.copy(f, file.path(out_dir, basename(f)), overwrite = TRUE)) copied <- copied + 1L
+  }
+  for (d in STATIC_DIRS) {
+    if (!dir.exists(d)) { warning("missing static dir: ", d, call. = FALSE); next }
+    dest <- file.path(out_dir, basename(d))
+    dir.create(dest, showWarnings = FALSE, recursive = TRUE)
+    fs <- list.files(d, full.names = TRUE, recursive = TRUE)
+    copied <- copied + sum(file.copy(fs, file.path(dest, basename(fs)), overwrite = TRUE))
+  }
+  message(sprintf("copied %d static file(s) into %s", copied, out_dir))
+  invisible(copied)
+}
 
 # ------------------------------------------------------------------- assembly
 substitute_markers <- function(html, file, stats, alt, tables, cfg, used) {
@@ -195,6 +227,7 @@ build_deck <- function(nc, cfg, figs, tables, stats, alt) {
 
   dir.create(dirname(OUT_HTML), showWarnings = FALSE, recursive = TRUE)
   writeLines(doc, OUT_HTML, useBytes = TRUE)
+  copy_static(dirname(OUT_HTML))
   message(sprintf("wrote %s (%d slides, %s)", OUT_HTML, nrow(spec),
                   format(structure(nchar(doc, type = "bytes"), class = "object_size"),
                          units = "auto")))

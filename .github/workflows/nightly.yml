@@ -85,6 +85,21 @@ jobs:
           fi
           echo "slides: $(grep -c '<section' docs/index.html)"
 
+      - name: PPTX carries no unresolved markers
+        # The HTML deck has been gated against this from the start; the PPTX
+        # never was, and shipped 44 literal {{STAT:...}} markers because
+        # r/pptx.R mines text from the raw templates.
+        run: |
+          set -euo pipefail
+          test -s docs/nc-drug-checking-latest.pptx
+          if unzip -p docs/nc-drug-checking-latest.pptx 'ppt/slides/slide*.xml' | grep -q '{{'; then
+            echo "::error::unresolved markers reached the PPTX"
+            unzip -p docs/nc-drug-checking-latest.pptx 'ppt/slides/slide*.xml' \
+              | grep -o '{{[^}]*}}' | sort -u | head -20
+            exit 1
+          fi
+          echo "pptx: no unresolved markers"
+
       - name: Publish
         run: |
           set -euo pipefail

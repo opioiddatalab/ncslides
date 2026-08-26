@@ -35,6 +35,18 @@ archive_snapshot <- function(run_date, html = OUT_HTML, pptx = OUT_PPTX,
       ext <- tools::file_ext(src)
       dest <- file.path(dir, paste0(d, ".", ext))
       file.copy(src, dest, overwrite = TRUE)
+      # An archived copy sits one level down, so the deck's relative references
+      # (logos, deck-stage.js, the PPTX download) would resolve inside
+      # archive/. Repoint them at the parent, and at this month's own PPTX
+      # rather than whatever "latest" happens to be years from now.
+      if (identical(ext, "html")) {
+        h <- paste(readLines(dest, warn = FALSE), collapse = "\n")
+        h <- gsub('src="assets/', 'src="../assets/', h, fixed = TRUE)
+        h <- gsub('src="deck-stage.js"', 'src="../deck-stage.js"', h, fixed = TRUE)
+        h <- gsub(sprintf('href="%s"', basename(OUT_PPTX)),
+                  sprintf('href="%s.pptx"', d), h, fixed = TRUE)
+        writeLines(h, dest, useBytes = TRUE)
+      }
       wrote <- c(wrote, dest)
     }
   }

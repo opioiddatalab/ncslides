@@ -123,6 +123,22 @@ pptx_template_16x9 <- function() {
   out
 }
 
+# Substitute {{STAT:key}} with its value. Chart and table markers are handled
+# by the layout branches below, so drop them rather than leaking the literal.
+resolve_stats <- function(html, stats) {
+  keys <- unique(regmatches(html, gregexpr("\\{\\{STAT:[^}]+\\}\\}", html))[[1]])
+  for (k in keys) {
+    key <- sub("\\}\\}$", "", sub("^\\{\\{STAT:", "", k))
+    val <- stats[[key]]
+    if (is.null(val)) {
+      warning("pptx: no stat for ", k, call. = FALSE)
+      val <- ""
+    }
+    html <- gsub(k, as.character(val), html, fixed = TRUE)
+  }
+  gsub("\\{\\{(CHART|TABLE):[^}]+\\}\\}", "", html)
+}
+
 # ---------------------------------------------------------------------- build
 build_pptx <- function(nc, cfg, tables, stats, alt, out = OUT_PPTX) {
   spec <- readr::read_csv(file.path(SLIDE_DIR, "spec.csv"), show_col_types = FALSE)
@@ -143,9 +159,18 @@ build_pptx <- function(nc, cfg, tables, stats, alt, out = OUT_PPTX) {
   for (i in seq_len(nrow(spec))) {
     row <- spec[i, ]
     html <- paste(readLines(file.path(SLIDE_DIR, row$file), warn = FALSE), collapse = "\n")
+    # Resolve stats BEFORE mining text. This file reads the raw templates, so
+    # without this every footer carried its literal {{STAT:...}} markers into
+    # the PowerPoint -- 44 of them shipped. The HTML deck is gated against
+    # unresolved markers; the PPTX never was.
+    html <- resolve_stats(html, stats)
     st <- slide_text(html)
     charts <- strsplit(row$charts, ";")[[1]]
-    charts <- charts[nzchar(charts)]
+    # nzchar(NA) is TRUE, so an empty charts column (read as NA) survived this
+    # filter as a 1-element vector. length(charts) was then truthy and every
+    # static slide took the CHART branch, looked for "figs/NA.png", found
+    # nothing, and silently lost all of its prose -- 22 of the 63 slides.
+    charts <- charts[!is.na(charts) & nzchar(charts)]
 
     doc <- add_slide(doc, layout = layout, master = master)
 
