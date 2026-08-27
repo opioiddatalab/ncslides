@@ -61,7 +61,7 @@
 <rect x='282.24' y='345.13' width='39.12' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 <rect x='332.87' y='250.31' width='82.85' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='282.24' y='250.31' width='50.63' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
-<rect x='313.31' y='202.91' width='142.69' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='313.31' y='202.91' width='141.53' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='282.24' y='202.91' width='31.07' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 <rect x='408.81' y='131.80' width='84.00' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='282.24' y='131.80' width='126.58' height='21.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
@@ -89,7 +89,7 @@
 <text x='301.80' y='359.84' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='12.34px' lengthAdjust='spacingAndGlyphs'>34</text>
 <text x='374.29' y='265.02' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='12.34px' lengthAdjust='spacingAndGlyphs'>72</text>
 <text x='307.55' y='265.02' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='12.34px' lengthAdjust='spacingAndGlyphs'>44</text>
-<text x='384.65' y='217.62' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.52px' lengthAdjust='spacingAndGlyphs'>124</text>
+<text x='384.07' y='217.62' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.52px' lengthAdjust='spacingAndGlyphs'>123</text>
 <text x='297.77' y='217.62' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='12.34px' lengthAdjust='spacingAndGlyphs'>27</text>
 <text x='450.81' y='146.51' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='12.34px' lengthAdjust='spacingAndGlyphs'>73</text>
 <text x='345.52' y='146.51' text-anchor='middle' style='font-size: 11.10px;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.52px' lengthAdjust='spacingAndGlyphs'>110</text>
@@ -132,7 +132,7 @@
 <rect x='656.40' y='16.29' width='16.57' height='16.57' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 <text x='603.69' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='44.39px' lengthAdjust='spacingAndGlyphs'>Primary</text>
 <text x='681.30' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='58.53px' lengthAdjust='spacingAndGlyphs'>Trace only</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='846.95px' lengthAdjust='spacingAndGlyphs'>lab_detail.substance; solid = primary abundance, light = trace, segments labelled directly. Trailing 12 months: date_complete 26 Aug 2025–26 Aug 2026; final period partial.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='846.95px' lengthAdjust='spacingAndGlyphs'>lab_detail.substance; solid = primary abundance, light = trace, segments labelled directly. Trailing 12 months: date_complete 27 Aug 2025–27 Aug 2026; final period partial.</text>
 </g>
 </g>
 </svg>

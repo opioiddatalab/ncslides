@@ -69,7 +69,7 @@
 <text x='365.50' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='28.44px' lengthAdjust='spacingAndGlyphs'>2025</text>
 <text x='451.58' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='28.44px' lengthAdjust='spacingAndGlyphs'>2026</text>
 <text transform='translate(19.63,211.47) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='119.11px' lengthAdjust='spacingAndGlyphs'>Positive samples</text>
-<text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='713.23px' lengthAdjust='spacingAndGlyphs'>Light = full year; dark = year to date through the same day-of-year as the data (26 Aug). % = YTD vs prior-year YTD. Positive = lab_xylazine_any.</text>
+<text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='713.23px' lengthAdjust='spacingAndGlyphs'>Light = full year; dark = year to date through the same day-of-year as the data (27 Aug). % = YTD vs prior-year YTD. Positive = lab_xylazine_any.</text>
 </g>
 </g>
 </svg>

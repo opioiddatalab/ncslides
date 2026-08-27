@@ -150,10 +150,10 @@
 <circle cx='958.97' cy='288.43' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
 <circle cx='974.95' cy='389.37' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='974.95' cy='262.10' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='991.47' cy='391.05' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
-<circle cx='991.47' cy='348.11' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<text x='991.47' y='385.24' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
-<text x='991.47' y='342.30' text-anchor='middle' style='font-size: 22.76px;fill: #C9DEEE; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
+<circle cx='991.47' cy='392.80' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
+<circle cx='991.47' cy='333.65' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<text x='991.47' y='386.99' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
+<text x='991.47' y='327.84' text-anchor='middle' style='font-size: 22.76px;fill: #C9DEEE; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='48.44' y='417.18' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
@@ -172,7 +172,7 @@
 <circle cx='551.38' cy='24.58' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
 <text x='490.38' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='44.39px' lengthAdjust='spacingAndGlyphs'>Primary</text>
 <text x='567.99' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='58.53px' lengthAdjust='spacingAndGlyphs'>Trace only</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1125.42px' lengthAdjust='spacingAndGlyphs'>Points: observed monthly rates; line: LOESS on complete months only. * current month is partial (data through 26 Aug 2026). Series: lab_medetomidine (primary) and trace-only (lab_medetomidine_any minus lab_medetomidine).</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1125.42px' lengthAdjust='spacingAndGlyphs'>Points: observed monthly rates; line: LOESS on complete months only. * current month is partial (data through 27 Aug 2026). Series: lab_medetomidine (primary) and trace-only (lab_medetomidine_any minus lab_medetomidine).</text>
 </g>
 </g>
 </svg>
