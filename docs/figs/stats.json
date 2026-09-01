@@ -7,9 +7,9 @@
   "first_date": "26 Jan 2022",
   "latest_date": "27 Aug 2026",
   "latest_date_prior_year": "27 Aug 2025",
-  "run_date": "31 Aug 2026",
-  "generated_at": "Monday, August 31, 2026 · 11:15 AM ET",
-  "run_date_prior_year": "31 Aug 2025",
+  "run_date": "01 Sep 2026",
+  "generated_at": "Tuesday, September 01, 2026 · 8:39 AM ET",
+  "run_date_prior_year": "01 Sep 2025",
   "latest_q": "2026Q2",
   "prev_q": "2026Q1",
   "latest_month": "Aug 2026",
@@ -81,7 +81,7 @@
   "dash_overdose_val": "50",
   "dash_overdose_badge": "<p style=\"font-size:24px;font-weight:700;color:#1E8E5A;background:#E9F5EF;padding:2px 12px;margin:0 0 0 auto\">▼ 58%<\/p>",
   "data_through": "2026-08-27",
-  "built": "2026-08-31T11:15:48-0400",
+  "built": "2026-09-01T08:39:51-0400",
   "figures_made": 55,
   "figures_skipped": []
 }
