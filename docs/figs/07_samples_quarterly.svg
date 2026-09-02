@@ -56,7 +56,7 @@
 <rect x='829.22' y='282.55' width='45.96' height='154.02' style='stroke-width: 0.64; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='880.29' y='197.24' width='45.96' height='239.32' style='stroke-width: 0.64; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='931.35' y='53.89' width='45.96' height='382.67' style='stroke-width: 0.64; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='982.41' y='122.61' width='45.96' height='313.96' style='stroke-width: 0.64; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
+<rect x='982.41' y='119.05' width='45.96' height='317.51' style='stroke-width: 0.64; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 <text x='86.25' y='322.80' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='14.53px' lengthAdjust='spacingAndGlyphs'>92</text>
 <text x='137.31' y='393.89' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='14.53px' lengthAdjust='spacingAndGlyphs'>32</text>
 <text x='188.38' y='244.61' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='21.80px' lengthAdjust='spacingAndGlyphs'>158</text>
@@ -75,7 +75,7 @@
 <text x='852.20' y='277.78' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='21.80px' lengthAdjust='spacingAndGlyphs'>130</text>
 <text x='903.27' y='192.48' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='21.80px' lengthAdjust='spacingAndGlyphs'>202</text>
 <text x='954.33' y='49.12' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='21.80px' lengthAdjust='spacingAndGlyphs'>323</text>
-<text x='1005.39' y='117.84' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='21.80px' lengthAdjust='spacingAndGlyphs'>265</text>
+<text x='1005.39' y='114.29' text-anchor='middle' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='21.80px' lengthAdjust='spacingAndGlyphs'>268</text>
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='48.44' y='441.23' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
@@ -102,7 +102,7 @@
 <text x='954.33' y='453.07' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='45.50px' lengthAdjust='spacingAndGlyphs'>2026Q2</text>
 <text x='1005.39' y='453.07' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='45.50px' lengthAdjust='spacingAndGlyphs'>2026Q3</text>
 <text transform='translate(19.63,222.27) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='114.50px' lengthAdjust='spacingAndGlyphs'>Unique samples</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='599.66px' lengthAdjust='spacingAndGlyphs'>Unique sampleid by calendar quarter of date_complete. Includes samples with date_complete 26 Jan 2022–27 Aug 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='599.75px' lengthAdjust='spacingAndGlyphs'>Unique sampleid by calendar quarter of date_complete. Includes samples with date_complete 26 Jan 2022–01 Sep 2026.</text>
 </g>
 </g>
 </svg>

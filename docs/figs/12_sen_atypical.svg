@@ -38,14 +38,14 @@
 <polyline points='120.75,259.92 503.23,259.92 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='120.75,163.02 503.23,163.02 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='120.75,66.11 503.23,66.11 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='120.75' y='313.22' width='186.28' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<rect x='120.75' y='216.31' width='235.03' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<rect x='120.75' y='313.22' width='186.17' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<rect x='120.75' y='216.31' width='233.27' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
 <rect x='120.75' y='22.51' width='329.72' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<rect x='120.75' y='119.41' width='251.84' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<text x='309.87' y='361.59' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.89px' lengthAdjust='spacingAndGlyphs'>8%</text>
-<text x='359.71' y='264.68' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>10%</text>
+<rect x='120.75' y='119.41' width='249.19' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<text x='309.76' y='361.59' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.89px' lengthAdjust='spacingAndGlyphs'>8%</text>
+<text x='357.94' y='264.68' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>10%</text>
 <text x='454.40' y='70.88' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>14%</text>
-<text x='376.52' y='167.78' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>11%</text>
+<text x='373.87' y='167.78' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>11%</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1MTEuMjB8MC4wMHw0NjAuODA=)'>
 <text x='113.58' y='361.49' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='48.42px' lengthAdjust='spacingAndGlyphs'>Fentanyl</text>
@@ -53,10 +53,10 @@
 <text x='113.58' y='167.68' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='46.98px' lengthAdjust='spacingAndGlyphs'>Cocaine</text>
 <text x='113.58' y='70.78' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='105.61px' lengthAdjust='spacingAndGlyphs'>Methamphetamine</text>
 <text x='120.75' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>0%</text>
-<text x='215.16' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>4%</text>
-<text x='309.56' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>8%</text>
-<text x='403.97' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>12%</text>
-<text x='498.37' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>16%</text>
+<text x='214.45' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>4%</text>
+<text x='308.14' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>8%</text>
+<text x='401.84' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>12%</text>
+<text x='495.54' y='431.47' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>16%</text>
 <text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='426.89px' lengthAdjust='spacingAndGlyphs'>Any of: unpleasant, weird smell, weird taste (parsed from the semicolon sensation list).</text>
 </g>
 </g>

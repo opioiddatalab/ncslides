@@ -39,14 +39,14 @@
 <polyline points='177.60,212.70 1036.03,212.70 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='177.60,133.96 1036.03,133.96 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='177.60,55.21 1036.03,55.21 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='177.60' y='177.26' width='657.49' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='177.60' y='19.78' width='681.51' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='177.60' y='98.52' width='671.75' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='177.60' y='177.26' width='657.67' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='177.60' y='19.78' width='681.66' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='177.60' y='98.52' width='672.33' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='177.60' y='256.00' width='442.95' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='177.60' y='334.74' width='391.23' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<text x='839.01' y='217.46' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>87%</text>
-<text x='863.03' y='59.98' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>91%</text>
-<text x='853.27' y='138.72' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>89%</text>
+<text x='839.19' y='217.46' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>87%</text>
+<text x='863.18' y='59.98' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>91%</text>
+<text x='853.85' y='138.72' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>89%</text>
 <text x='624.47' y='296.20' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>59%</text>
 <text x='572.75' y='374.94' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>52%</text>
 </g>
@@ -61,7 +61,7 @@
 <text x='629.40' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>60%</text>
 <text x='855.31' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>90%</text>
 <text x='606.81' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='204.16px' lengthAdjust='spacingAndGlyphs'>Confirmed in any abundance</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='693.41px' lengthAdjust='spacingAndGlyphs'>Numerator lab_*_any (primary or trace) among samples with expect_* = 1. Includes samples with date_complete 26 Jan 2022–27 Aug 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='693.50px' lengthAdjust='spacingAndGlyphs'>Numerator lab_*_any (primary or trace) among samples with expect_* = 1. Includes samples with date_complete 26 Jan 2022–01 Sep 2026.</text>
 </g>
 </g>
 </svg>
