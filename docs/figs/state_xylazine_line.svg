@@ -38,7 +38,7 @@
 <polyline points='48.50,225.20 503.23,225.20 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='48.50,116.77 503.23,116.77 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='69.17,73.40 106.75,181.83 144.33,73.40 181.91,268.58 219.50,268.58 257.08,73.40 294.66,138.46 332.24,333.64 369.82,73.40 407.40,160.14 444.98,398.70 482.56,355.32 ' style='stroke-width: 2.77; stroke: #C9DEEE; stroke-linecap: butt;' />
-<polyline points='69.17,181.83 106.75,246.89 144.33,268.58 181.91,377.01 219.50,355.32 257.08,290.26 294.66,225.20 332.24,355.32 ' style='stroke-width: 2.77; stroke: #13294B; stroke-linecap: butt;' />
+<polyline points='69.17,181.83 106.75,246.89 144.33,268.58 181.91,377.01 219.50,355.32 257.08,290.26 294.66,225.20 332.24,355.32 369.82,398.70 ' style='stroke-width: 2.77; stroke: #13294B; stroke-linecap: butt;' />
 <circle cx='69.17' cy='73.40' r='2.86' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
 <circle cx='106.75' cy='181.83' r='2.86' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
 <circle cx='144.33' cy='73.40' r='2.86' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
@@ -59,6 +59,7 @@
 <circle cx='257.08' cy='290.26' r='2.86' style='stroke-width: 1.03; stroke: #13294B; fill: #13294B;' />
 <circle cx='294.66' cy='225.20' r='2.86' style='stroke-width: 1.03; stroke: #13294B; fill: #13294B;' />
 <circle cx='332.24' cy='355.32' r='2.86' style='stroke-width: 1.03; stroke: #13294B; fill: #13294B;' />
+<circle cx='369.82' cy='398.70' r='2.86' style='stroke-width: 1.03; stroke: #13294B; fill: #13294B;' />
 </g>
 <g clip-path='url(#cpMC4wMHw1MTEuMjB8MC4wMHw0NjAuODA=)'>
 <text x='41.33' y='338.30' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>5</text>
@@ -83,7 +84,7 @@
 <circle cx='288.49' cy='24.58' r='2.86' style='stroke-width: 1.03; stroke: #13294B; fill: #13294B;' />
 <text x='243.44' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='28.44px' lengthAdjust='spacingAndGlyphs'>2025</text>
 <text x='305.10' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='28.44px' lengthAdjust='spacingAndGlyphs'>2026</text>
-<text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='325.31px' lengthAdjust='spacingAndGlyphs'>Counts, not rates. Final month partial (data through 01 Sep 2026).</text>
+<text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='325.31px' lengthAdjust='spacingAndGlyphs'>Counts, not rates. Final month partial (data through 02 Sep 2026).</text>
 </g>
 </g>
 </svg>
