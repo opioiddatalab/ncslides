@@ -61,7 +61,7 @@
 <text x='629.40' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>60%</text>
 <text x='855.31' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>90%</text>
 <text x='606.81' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='204.16px' lengthAdjust='spacingAndGlyphs'>Confirmed in any abundance</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='693.50px' lengthAdjust='spacingAndGlyphs'>Numerator lab_*_any (primary or trace) among samples with expect_* = 1. Includes samples with date_complete 26 Jan 2022–08 Sep 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='693.50px' lengthAdjust='spacingAndGlyphs'>Numerator lab_*_any (primary or trace) among samples with expect_* = 1. Includes samples with date_complete 26 Jan 2022–14 Sep 2026.</text>
 </g>
 </g>
 </svg>

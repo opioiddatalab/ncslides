@@ -102,7 +102,7 @@
 <text x='954.33' y='453.07' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='45.50px' lengthAdjust='spacingAndGlyphs'>2026Q2</text>
 <text x='1005.39' y='453.07' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='45.50px' lengthAdjust='spacingAndGlyphs'>2026Q3</text>
 <text transform='translate(19.63,222.27) rotate(-90)' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='132.95px' lengthAdjust='spacingAndGlyphs'>Per 1,000 reported</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1452.12px' lengthAdjust='spacingAndGlyphs'>od = 1 per 1,000 samples whose overdose involvement was REPORTED that quarter (od not missing); the question was added in card v2, so silent samples are excluded from the denominator rather than counted as not-involved. Includes samples with date_complete 26 Jan 2022–08 Sep 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1452.12px' lengthAdjust='spacingAndGlyphs'>od = 1 per 1,000 samples whose overdose involvement was REPORTED that quarter (od not missing); the question was added in card v2, so silent samples are excluded from the denominator rather than counted as not-involved. Includes samples with date_complete 26 Jan 2022–14 Sep 2026.</text>
 </g>
 </g>
 </svg>
