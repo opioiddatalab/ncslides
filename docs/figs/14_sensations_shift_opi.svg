@@ -91,7 +91,7 @@
 <text x='726.49' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>40%</text>
 <text x='888.56' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>50%</text>
 <text x='557.08' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='242.08px' lengthAdjust='spacingAndGlyphs'>% of consumed samples reporting</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1110.59px' lengthAdjust='spacingAndGlyphs'>Light = before, orange = past 12 months. Consumed samples with an opioid or benzodiazepine detected in any abundance; windows split at 21 Sep 2025. Variables: lab_fentanyl_any, lab_heroin_any, lab_benzodiazepine_any.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1110.59px' lengthAdjust='spacingAndGlyphs'>Light = before, orange = past 12 months. Consumed samples with an opioid or benzodiazepine detected in any abundance; windows split at 22 Sep 2025. Variables: lab_fentanyl_any, lab_heroin_any, lab_benzodiazepine_any.</text>
 </g>
 </g>
 </svg>
