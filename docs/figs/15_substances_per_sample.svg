@@ -40,9 +40,9 @@
 <polyline points='66.28,182.10 1036.03,182.10 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='66.28,109.12 1036.03,109.12 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <rect x='319.16' y='111.17' width='208.80' height='289.88' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='783.15' y='263.40' width='208.80' height='137.64' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='783.15' y='263.26' width='208.80' height='137.79' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='110.36' y='73.51' width='208.80' height='327.54' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
-<rect x='574.36' y='301.06' width='208.80' height='99.98' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
+<rect x='574.36' y='300.92' width='208.80' height='100.13' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='59.11' y='405.71' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
@@ -58,7 +58,7 @@
 <rect x='564.15' y='16.29' width='16.57' height='16.57' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <text x='467.16' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='88.67px' lengthAdjust='spacingAndGlyphs'>Any abundance</text>
 <text x='589.05' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='71.36px' lengthAdjust='spacingAndGlyphs'>Primary only</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='580.75px' lengthAdjust='spacingAndGlyphs'>lab_num_substances vs lab_num_substances_any. Includes samples with date_complete 26 Jan 2022–30 Sep 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='578.38px' lengthAdjust='spacingAndGlyphs'>lab_num_substances vs lab_num_substances_any. Includes samples with date_complete 26 Jan 2022–01 Oct 2026.</text>
 </g>
 </g>
 </svg>
