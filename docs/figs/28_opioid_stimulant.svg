@@ -60,7 +60,7 @@
 <circle cx='852.48' cy='315.83' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='898.41' cy='283.67' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='944.84' cy='246.85' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
-<circle cx='991.79' cy='246.85' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
+<circle cx='991.79' cy='281.34' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='106.96' cy='212.35' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='152.89' cy='189.36' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='199.32' cy='293.88' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
@@ -80,7 +80,7 @@
 <circle cx='852.48' cy='235.35' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='898.41' cy='285.17' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='944.84' cy='184.76' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<text x='991.79' y='241.04' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
+<text x='991.79' y='275.53' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='55.55' y='423.98' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
@@ -100,7 +100,7 @@
 <circle cx='570.10' cy='24.58' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <text x='312.68' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='240.81px' lengthAdjust='spacingAndGlyphs'>Fentanyl (any) in cocaine-primary samples</text>
 <text x='586.71' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='224.61px' lengthAdjust='spacingAndGlyphs'>Fentanyl (any) in meth-primary samples</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='763.38px' lengthAdjust='spacingAndGlyphs'>Denominator: samples with that stimulant as PRIMARY (lab_meth / lab_cocaine); numerator lab_fentanyl_any. * partial quarter (data through 05 Oct 2026).</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='763.38px' lengthAdjust='spacingAndGlyphs'>Denominator: samples with that stimulant as PRIMARY (lab_meth / lab_cocaine); numerator lab_fentanyl_any. * partial quarter (data through 06 Oct 2026).</text>
 </g>
 </g>
 </svg>
