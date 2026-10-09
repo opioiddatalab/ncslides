@@ -40,7 +40,7 @@
 <polyline points='62.72,160.61 1036.03,160.61 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='62.72,74.38 1036.03,74.38 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='106.96,212.35 152.89,189.36 199.32,293.88 246.27,246.85 293.22,274.08 339.14,275.59 385.58,298.59 432.52,231.17 479.47,384.82 525.90,304.34 572.34,347.45 619.28,74.38 666.23,311.52 712.16,380.99 758.59,189.36 805.54,419.32 852.48,235.35 898.41,285.17 944.84,184.76 ' style='stroke-width: 2.99; stroke: #B45D08; stroke-linecap: butt;' />
-<polyline points='106.96,333.08 152.89,419.32 199.32,304.34 246.27,358.44 293.22,363.38 339.14,363.68 385.58,386.47 432.52,394.68 479.47,364.13 525.90,356.60 572.34,337.62 619.28,386.47 666.23,304.34 712.16,352.25 758.59,319.47 805.54,300.74 852.48,315.83 898.41,283.67 944.84,246.85 ' style='stroke-width: 2.99; stroke: #3A6D99; stroke-linecap: butt;' />
+<polyline points='106.96,333.08 152.89,419.32 199.32,304.34 246.27,358.44 293.22,363.38 339.14,363.68 385.58,386.47 432.52,394.68 479.47,364.13 525.90,356.60 572.34,337.62 619.28,386.47 666.23,304.34 712.16,352.25 758.59,319.47 805.54,300.74 852.48,315.83 898.41,283.67 944.84,245.47 ' style='stroke-width: 2.99; stroke: #3A6D99; stroke-linecap: butt;' />
 <circle cx='106.96' cy='333.08' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='152.89' cy='419.32' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='199.32' cy='304.34' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
@@ -59,8 +59,8 @@
 <circle cx='805.54' cy='300.74' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='852.48' cy='315.83' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='898.41' cy='283.67' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
-<circle cx='944.84' cy='246.85' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
-<circle cx='991.79' cy='281.34' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
+<circle cx='944.84' cy='245.47' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
+<circle cx='991.79' cy='246.85' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='106.96' cy='212.35' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='152.89' cy='189.36' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='199.32' cy='293.88' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
@@ -80,7 +80,7 @@
 <circle cx='852.48' cy='235.35' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='898.41' cy='285.17' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='944.84' cy='184.76' r='3.29' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<text x='991.79' y='275.53' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
+<text x='991.79' y='241.04' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='55.55' y='423.98' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
@@ -100,7 +100,7 @@
 <circle cx='570.10' cy='24.58' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <text x='312.68' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='240.81px' lengthAdjust='spacingAndGlyphs'>Fentanyl (any) in cocaine-primary samples</text>
 <text x='586.71' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='224.61px' lengthAdjust='spacingAndGlyphs'>Fentanyl (any) in meth-primary samples</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='763.38px' lengthAdjust='spacingAndGlyphs'>Denominator: samples with that stimulant as PRIMARY (lab_meth / lab_cocaine); numerator lab_fentanyl_any. * partial quarter (data through 07 Oct 2026).</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='763.38px' lengthAdjust='spacingAndGlyphs'>Denominator: samples with that stimulant as PRIMARY (lab_meth / lab_cocaine); numerator lab_fentanyl_any. * partial quarter (data through 08 Oct 2026).</text>
 </g>
 </g>
 </svg>
