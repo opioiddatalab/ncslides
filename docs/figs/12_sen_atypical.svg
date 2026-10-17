@@ -38,14 +38,14 @@
 <polyline points='120.75,259.92 503.23,259.92 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='120.75,163.02 503.23,163.02 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='120.75,66.11 503.23,66.11 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='120.75' y='313.22' width='181.67' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<rect x='120.75' y='216.31' width='242.72' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<rect x='120.75' y='313.22' width='181.19' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<rect x='120.75' y='216.31' width='242.22' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
 <rect x='120.75' y='22.51' width='329.72' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<rect x='120.75' y='119.41' width='259.83' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<text x='305.25' y='361.59' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.89px' lengthAdjust='spacingAndGlyphs'>7%</text>
-<text x='367.39' y='264.68' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>10%</text>
+<rect x='120.75' y='119.41' width='259.08' height='87.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<text x='304.78' y='361.59' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='18.89px' lengthAdjust='spacingAndGlyphs'>7%</text>
+<text x='366.90' y='264.68' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>10%</text>
 <text x='454.40' y='70.88' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>13%</text>
-<text x='384.50' y='167.78' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>10%</text>
+<text x='383.75' y='167.78' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>10%</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1MTEuMjB8MC4wMHw0NjAuODA=)'>
 <text x='113.58' y='361.49' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='48.42px' lengthAdjust='spacingAndGlyphs'>Fentanyl</text>
