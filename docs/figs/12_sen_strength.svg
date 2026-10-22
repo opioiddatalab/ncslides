@@ -44,9 +44,9 @@
 <rect x='450.14' y='69.91' width='45.59' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 <rect x='349.84' y='69.91' width='100.30' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #E2E8F0;' />
 <rect x='120.75' y='69.91' width='229.09' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
-<rect x='437.32' y='155.11' width='58.41' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
-<rect x='240.46' y='155.11' width='196.86' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #E2E8F0;' />
-<rect x='120.75' y='155.11' width='119.70' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
+<rect x='437.43' y='155.11' width='58.30' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
+<rect x='240.23' y='155.11' width='197.21' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #E2E8F0;' />
+<rect x='120.75' y='155.11' width='119.47' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
 <rect x='449.50' y='325.51' width='46.23' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 <rect x='264.58' y='325.51' width='184.92' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #E2E8F0;' />
 <rect x='120.75' y='325.51' width='143.83' height='76.68' style='stroke-width: 0.85; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #B45D08;' />
@@ -56,9 +56,9 @@
 <text x='472.94' y='112.60' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>12%</text>
 <text x='399.99' y='112.60' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>27%</text>
 <text x='235.30' y='112.60' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>61%</text>
-<text x='466.53' y='197.80' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>16%</text>
-<text x='338.89' y='197.80' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>52%</text>
-<text x='180.60' y='197.80' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>32%</text>
+<text x='466.58' y='197.80' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>16%</text>
+<text x='338.83' y='197.80' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>53%</text>
+<text x='180.49' y='197.80' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>32%</text>
 <text x='472.62' y='368.20' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>12%</text>
 <text x='357.04' y='368.20' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>49%</text>
 <text x='192.67' y='368.20' text-anchor='middle' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>38%</text>
@@ -79,7 +79,7 @@
 <text x='224.69' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='43.34px' lengthAdjust='spacingAndGlyphs'>Weaker</text>
 <text x='301.26' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='41.25px' lengthAdjust='spacingAndGlyphs'>Normal</text>
 <text x='375.73' y='29.25' style='font-size: 12.80px; font-family: "Nimbus Sans";' textLength='48.81px' lengthAdjust='spacingAndGlyphs'>Stronger</text>
-<text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='994.58px' lengthAdjust='spacingAndGlyphs'>sen_strength among consumed samples with the substance in any abundance. Segments labelled directly, so colour is not the only cue. Includes samples with date_complete 26 Jan 2022–20 Oct 2026.</text>
+<text x='7.97' y='450.39' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='994.58px' lengthAdjust='spacingAndGlyphs'>sen_strength among consumed samples with the substance in any abundance. Segments labelled directly, so colour is not the only cue. Includes samples with date_complete 26 Jan 2022–21 Oct 2026.</text>
 </g>
 </g>
 </svg>

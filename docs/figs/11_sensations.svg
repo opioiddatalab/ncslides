@@ -45,7 +45,7 @@
 <polyline points='78.13,72.20 1036.03,72.20 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='78.13,32.06 1036.03,32.06 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <rect x='78.13' y='13.99' width='811.78' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='78.13' y='54.13' width='686.15' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='78.13' y='54.13' width='687.36' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='78.13' y='94.28' width='438.51' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='78.13' y='134.42' width='364.82' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='78.13' y='174.56' width='322.54' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
@@ -55,7 +55,7 @@
 <rect x='78.13' y='335.13' width='247.64' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='78.13' y='375.27' width='141.34' height='36.13' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <text x='895.42' y='36.41' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='55.06px' lengthAdjust='spacingAndGlyphs'>672 (30%)</text>
-<text x='769.78' y='76.55' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='55.06px' lengthAdjust='spacingAndGlyphs'>568 (25%)</text>
+<text x='770.99' y='76.55' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='55.06px' lengthAdjust='spacingAndGlyphs'>569 (25%)</text>
 <text x='522.14' y='116.69' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='55.06px' lengthAdjust='spacingAndGlyphs'>363 (16%)</text>
 <text x='448.45' y='156.84' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='55.06px' lengthAdjust='spacingAndGlyphs'>302 (13%)</text>
 <text x='406.17' y='196.98' style='font-size: 11.95px;fill: #13294B; font-family: "Nimbus Sans";' textLength='55.06px' lengthAdjust='spacingAndGlyphs'>267 (12%)</text>
@@ -81,7 +81,7 @@
 <text x='561.33' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>400</text>
 <text x='802.93' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>600</text>
 <text x='557.08' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='62.06px' lengthAdjust='spacingAndGlyphs'>Samples</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='915.00px' lengthAdjust='spacingAndGlyphs'>sensations (circled on card), semicolon lists split, one count per sample; consumed samples only (consumed = "taken"). Includes samples with date_complete 26 Jan 2022–20 Oct 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='915.00px' lengthAdjust='spacingAndGlyphs'>sensations (circled on card), semicolon lists split, one count per sample; consumed samples only (consumed = "taken"). Includes samples with date_complete 26 Jan 2022–21 Oct 2026.</text>
 </g>
 </g>
 </svg>

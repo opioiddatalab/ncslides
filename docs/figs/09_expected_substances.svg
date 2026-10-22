@@ -47,7 +47,7 @@
 <polyline points='171.97,61.67 1036.03,61.67 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='171.97,28.11 1036.03,28.11 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <rect x='171.97' y='13.00' width='771.48' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='171.97' y='46.57' width='226.67' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='171.97' y='46.57' width='227.17' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='171.97' y='80.13' width='151.11' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='171.97' y='113.69' width='125.27' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='171.97' y='147.25' width='82.52' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
@@ -59,7 +59,7 @@
 <rect x='171.97' y='348.62' width='24.85' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='171.97' y='382.18' width='15.41' height='30.21' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <text x='948.15' y='32.67' style='font-size: 12.52px;fill: #13294B; font-family: "Nimbus Sans";' textLength='31.30px' lengthAdjust='spacingAndGlyphs'>1,552</text>
-<text x='401.77' y='66.23' style='font-size: 12.52px;fill: #13294B; font-family: "Nimbus Sans";' textLength='20.86px' lengthAdjust='spacingAndGlyphs'>456</text>
+<text x='402.27' y='66.23' style='font-size: 12.52px;fill: #13294B; font-family: "Nimbus Sans";' textLength='20.86px' lengthAdjust='spacingAndGlyphs'>457</text>
 <text x='326.22' y='99.79' style='font-size: 12.52px;fill: #13294B; font-family: "Nimbus Sans";' textLength='20.86px' lengthAdjust='spacingAndGlyphs'>304</text>
 <text x='300.37' y='133.35' style='font-size: 12.52px;fill: #13294B; font-family: "Nimbus Sans";' textLength='20.86px' lengthAdjust='spacingAndGlyphs'>252</text>
 <text x='257.62' y='166.91' style='font-size: 12.52px;fill: #13294B; font-family: "Nimbus Sans";' textLength='20.86px' lengthAdjust='spacingAndGlyphs'>166</text>
@@ -89,7 +89,7 @@
 <text x='669.06' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='32.00px' lengthAdjust='spacingAndGlyphs'>1,000</text>
 <text x='917.60' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='32.00px' lengthAdjust='spacingAndGlyphs'>1,500</text>
 <text x='604.00' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='62.06px' lengthAdjust='spacingAndGlyphs'>Samples</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='524.09px' lengthAdjust='spacingAndGlyphs'>expectedsubstance, semicolon lists split. Includes samples with date_complete 26 Jan 2022–20 Oct 2026.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='524.09px' lengthAdjust='spacingAndGlyphs'>expectedsubstance, semicolon lists split. Includes samples with date_complete 26 Jan 2022–21 Oct 2026.</text>
 </g>
 </g>
 </svg>
