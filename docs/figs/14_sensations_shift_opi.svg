@@ -42,38 +42,38 @@
 <polyline points='78.13,137.80 1036.03,137.80 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='78.13,87.86 1036.03,87.86 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='78.13,37.93 1036.03,37.93 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<line x1='353.13' y1='287.60' x2='103.88' y2='287.60' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='204.86' y1='187.73' x2='313.17' y2='187.73' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='420.04' y1='387.46' x2='94.36' y2='387.46' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='409.19' y1='137.80' x2='344.09' y2='137.80' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='693.07' y1='87.86' x2='534.36' y2='87.86' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='215.71' y1='37.93' x2='874.47' y2='37.93' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='237.41' y1='237.66' x2='153.82' y2='237.66' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<line x1='362.17' y1='337.53' x2='99.12' y2='337.53' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
-<circle cx='353.13' cy='287.60' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='204.86' cy='187.73' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='420.04' cy='387.46' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='409.19' cy='137.80' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='693.07' cy='87.86' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='215.71' cy='37.93' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='237.41' cy='237.66' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='362.17' cy='337.53' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='103.88' cy='287.60' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<circle cx='313.17' cy='187.73' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<line x1='352.77' y1='287.60' x2='103.85' y2='287.60' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='204.72' y1='187.73' x2='312.52' y2='187.73' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='419.57' y1='387.46' x2='94.36' y2='387.46' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='408.74' y1='137.80' x2='343.35' y2='137.80' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='692.21' y1='87.86' x2='533.05' y2='87.86' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='215.55' y1='37.93' x2='874.51' y2='37.93' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='237.22' y1='237.66' x2='153.65' y2='237.66' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<line x1='361.80' y1='337.53' x2='99.11' y2='337.53' style='stroke-width: 3.41; stroke: #B8C4D4; stroke-linecap: butt;' />
+<circle cx='352.77' cy='287.60' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='204.72' cy='187.73' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='419.57' cy='387.46' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='408.74' cy='137.80' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='692.21' cy='87.86' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='215.55' cy='37.93' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='237.22' cy='237.66' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='361.80' cy='337.53' r='4.78' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<circle cx='103.85' cy='287.60' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<circle cx='312.52' cy='187.73' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
 <circle cx='94.36' cy='387.46' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<circle cx='344.09' cy='137.80' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<circle cx='534.36' cy='87.86' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<circle cx='874.47' cy='37.93' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<circle cx='153.82' cy='237.66' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<circle cx='99.12' cy='337.53' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
-<text x='384.81' y='291.95' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-16 pts</text>
-<text x='344.85' y='192.08' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='34.78px' lengthAdjust='spacingAndGlyphs'>+7 pts</text>
-<text x='451.72' y='391.81' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-21 pts</text>
-<text x='440.87' y='142.15' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='31.78px' lengthAdjust='spacingAndGlyphs'>-4 pts</text>
-<text x='724.75' y='92.22' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-10 pts</text>
+<circle cx='343.35' cy='137.80' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<circle cx='533.05' cy='87.86' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<circle cx='874.51' cy='37.93' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<circle cx='153.65' cy='237.66' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<circle cx='99.11' cy='337.53' r='5.42' style='stroke-width: 1.03; stroke: #B45D08; fill: #B45D08;' />
+<text x='384.40' y='291.95' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-16 pts</text>
+<text x='344.15' y='192.08' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='34.78px' lengthAdjust='spacingAndGlyphs'>+7 pts</text>
+<text x='451.21' y='391.81' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-21 pts</text>
+<text x='440.37' y='142.15' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='31.78px' lengthAdjust='spacingAndGlyphs'>-4 pts</text>
+<text x='723.84' y='92.22' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-10 pts</text>
 <text x='906.14' y='42.28' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='41.42px' lengthAdjust='spacingAndGlyphs'>+42 pts</text>
-<text x='269.09' y='242.02' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='31.78px' lengthAdjust='spacingAndGlyphs'>-5 pts</text>
-<text x='393.85' y='341.88' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-17 pts</text>
+<text x='268.85' y='242.02' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='31.78px' lengthAdjust='spacingAndGlyphs'>-5 pts</text>
+<text x='393.43' y='341.88' style='font-size: 11.95px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='38.42px' lengthAdjust='spacingAndGlyphs'>-17 pts</text>
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='70.95' y='392.13' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='39.09px' lengthAdjust='spacingAndGlyphs'>normal</text>
@@ -84,15 +84,15 @@
 <text x='70.95' y='142.46' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='48.11px' lengthAdjust='spacingAndGlyphs'>sedating</text>
 <text x='70.95' y='92.53' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='46.70px' lengthAdjust='spacingAndGlyphs'>stronger</text>
 <text x='70.95' y='42.60' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='36.58px' lengthAdjust='spacingAndGlyphs'>typical</text>
-<text x='80.09' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>0%</text>
-<text x='238.49' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>10%</text>
-<text x='396.89' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>20%</text>
-<text x='555.29' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>30%</text>
-<text x='713.69' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>40%</text>
-<text x='872.09' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>50%</text>
-<text x='1030.49' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>60%</text>
+<text x='80.14' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>0%</text>
+<text x='238.30' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>10%</text>
+<text x='396.46' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>20%</text>
+<text x='554.63' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>30%</text>
+<text x='712.79' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>40%</text>
+<text x='870.96' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>50%</text>
+<text x='1029.12' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='25.59px' lengthAdjust='spacingAndGlyphs'>60%</text>
 <text x='557.08' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='242.08px' lengthAdjust='spacingAndGlyphs'>% of consumed samples reporting</text>
-<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1108.22px' lengthAdjust='spacingAndGlyphs'>Light = before, orange = past 12 months. Consumed samples with an opioid or benzodiazepine detected in any abundance; windows split at 26 Oct 2025. Variables: lab_fentanyl_any, lab_heroin_any, lab_benzodiazepine_any.</text>
+<text x='7.97' y='471.99' style='font-size: 11.20px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='1108.22px' lengthAdjust='spacingAndGlyphs'>Light = before, orange = past 12 months. Consumed samples with an opioid or benzodiazepine detected in any abundance; windows split at 27 Oct 2025. Variables: lab_fentanyl_any, lab_heroin_any, lab_benzodiazepine_any.</text>
 </g>
 </g>
 </svg>
