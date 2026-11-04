@@ -35,19 +35,19 @@
 </defs>
 <g clip-path='url(#cpNTUuNjF8MTAzNi4wM3w1Ny4xM3w0MTcuNDI=)'>
 <polyline points='55.61,401.05 1036.03,401.05 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='55.61,313.47 1036.03,313.47 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='55.61,225.89 1036.03,225.89 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='55.61,138.31 1036.03,138.31 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='311.27' y='105.04' width='211.09' height='296.01' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<rect x='780.37' y='285.09' width='211.09' height='115.95' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<polyline points='55.61,313.56 1036.03,313.56 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='55.61,226.08 1036.03,226.08 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='55.61,138.60 1036.03,138.60 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='311.27' y='105.00' width='211.09' height='296.04' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='780.37' y='285.22' width='211.09' height='115.83' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='100.18' y='73.51' width='211.09' height='327.54' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
-<rect x='569.28' y='316.62' width='211.09' height='84.42' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
+<rect x='569.28' y='316.71' width='211.09' height='84.33' style='stroke-width: 0.53; stroke: #5B6770; stroke-linecap: butt; stroke-linejoin: miter; fill: #C9DEEE;' />
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='48.44' y='405.71' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
-<text x='48.44' y='318.13' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>250</text>
-<text x='48.44' y='230.56' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>500</text>
-<text x='48.44' y='142.98' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>750</text>
+<text x='48.44' y='318.23' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>250</text>
+<text x='48.44' y='230.74' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>500</text>
+<text x='48.44' y='143.26' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>750</text>
 <text x='311.27' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
 <text x='780.37' y='433.93' text-anchor='middle' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>1</text>
 <text x='545.82' y='452.37' text-anchor='middle' style='font-size: 16.00px;fill: #5B6770; font-family: "Nimbus Sans";' textLength='156.42px' lengthAdjust='spacingAndGlyphs'>Substances in sample</text>

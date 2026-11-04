@@ -157,10 +157,10 @@
 <circle cx='960.66' cy='399.29' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
 <circle cx='975.81' cy='144.24' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
 <circle cx='975.81' cy='405.28' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<circle cx='991.47' cy='132.35' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
-<circle cx='991.47' cy='367.14' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
-<text x='991.47' y='126.54' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
-<text x='991.47' y='361.33' text-anchor='middle' style='font-size: 22.76px;fill: #C9DEEE; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
+<circle cx='991.47' cy='148.29' r='3.29' style='stroke-width: 1.03; stroke: #3A6D99; fill: #3A6D99;' />
+<circle cx='991.47' cy='370.04' r='3.29' style='stroke-width: 1.03; stroke: #C9DEEE; fill: #C9DEEE;' />
+<text x='991.47' y='142.49' text-anchor='middle' style='font-size: 22.76px;fill: #3A6D99; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
+<text x='991.47' y='364.23' text-anchor='middle' style='font-size: 22.76px;fill: #C9DEEE; font-family: "Nimbus Sans";' textLength='8.84px' lengthAdjust='spacingAndGlyphs'>*</text>
 </g>
 <g clip-path='url(#cpMC4wMHwxMDQ0LjAwfDAuMDB8NDgyLjQw)'>
 <text x='48.44' y='423.98' text-anchor='end' style='font-size: 12.80px;fill: #667180; font-family: "Nimbus Sans";' textLength='7.11px' lengthAdjust='spacingAndGlyphs'>0</text>
