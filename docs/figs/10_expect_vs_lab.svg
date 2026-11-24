@@ -39,12 +39,12 @@
 <polyline points='177.60,212.70 1036.03,212.70 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='177.60,133.96 1036.03,133.96 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='177.60,55.21 1036.03,55.21 ' style='stroke-width: 1.55; stroke: #EBEBEB; stroke-linecap: butt;' />
-<rect x='177.60' y='177.26' width='657.49' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
+<rect x='177.60' y='177.26' width='657.25' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='177.60' y='19.78' width='667.32' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='177.60' y='98.52' width='658.89' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='177.60' y='256.00' width='419.40' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
 <rect x='177.60' y='334.74' width='372.56' height='70.87' style='stroke-width: 1.55; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A6D99;' />
-<text x='839.01' y='217.46' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>87%</text>
+<text x='838.77' y='217.46' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>87%</text>
 <text x='848.84' y='59.98' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>89%</text>
 <text x='840.41' y='138.72' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>88%</text>
 <text x='600.92' y='296.20' style='font-size: 13.09px; font-weight: bold;fill: #13294B; font-family: "Nimbus Sans";' textLength='26.16px' lengthAdjust='spacingAndGlyphs'>56%</text>
